@@ -1,0 +1,6 @@
+.Navbar
+{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}

@@ -1,0 +1,17 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    
+}
+.main-content
+{
+    background-color: #282c34;
+    max-width: 85vw;
+    
+}
+.secondary-content
+{
+    background-color: pink ;
+    max-width: 15vw;
+}
