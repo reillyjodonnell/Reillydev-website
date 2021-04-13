@@ -8,13 +8,7 @@ import Introduction from './Introduction';
 export default function PrimarySection() {
   return (
     <div className="content">
-      <div className="secondary-content">
-        <h1>This is the secondary content</h1>
-      </div>
-      <div className="main-content">
-        <Navbar />
-        <Introduction/>
-      </div>
+      <h1>Test</h1>
     </div>
   );
 }

@@ -1,17 +1,9 @@
 .content{
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+    height: 60vh;
+    width: 80vw;
+    background-color: white;
+    padding: auto;
+    margin: auto;
+    border-radius: 20px;
     
-}
-.main-content
-{
-    background-color: #282c34;
-    max-width: 85vw;
-    
-}
-.secondary-content
-{
-    background-color: pink ;
-    max-width: 5vw;
 }

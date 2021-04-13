@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import '../CSS Components/Introduction.css'
 
 export default function Introduction() {
-    return (
-        <div style={{margin: 'auto'}}>
-            <h2>
-                Hey I'm Reilly
-            </h2>
-        </div>
-    )
+  return (
+    <div className="box">
+      <div style={{backgroundColor: 'green'}} >
+      </div>
+    </div>
+  );
 }
