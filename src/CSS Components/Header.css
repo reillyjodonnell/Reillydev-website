@@ -1,3 +1,8 @@
+/*Dark Mode transition*/
+.transition{
+    transition: all .6s linear;
+}
+
 .header{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -6,13 +11,29 @@
     display: flex;
     align-items: center;
     padding-top: 0;
-    
-    
+}
+.header-dark{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 100px;
+   
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    background-color: #222222;
+    color: white;
+
 }
 .logo{
     width: auto;
     margin-left: 10vw;
     color: black;
+    font-size: 40px;
+}
+.logo-dark{
+    width: auto;
+    margin-left: 10vw;
+    color: white;
     font-size: 40px;
 }
 .nav-links{

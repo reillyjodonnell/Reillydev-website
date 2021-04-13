@@ -3,17 +3,13 @@ import '../CSS Components/Header.css'
 import Moon from '../Assets/Icons/Moon.svg'
 import Sun from '../Assets/Icons/Sun.svg'
 
-export default function Header() {
-    const [darkMode, toggleDarkMode] = useState(false);
+export default function Header(props) {
 
-    const enableDarkMode = () => {
-        toggleDarkMode(!darkMode);
-    }
 
     return (
         <div>
-            <header className="header">
-                <div className="logo">
+            <header className={props.darkMode ? "header-dark transition" : "header transition"} >
+                <div className={props.darkMode ? "logo-dark transition" : "logo transition"}>
                     <h2>RO</h2>
                 </div>
                 <div className="nav-links">
@@ -26,9 +22,9 @@ export default function Header() {
                     <h2 id="links">
                         hire me
                     </h2>
-                    {darkMode ? <img id="links" onClick={enableDarkMode} className="dark-mode-image" src={Sun} alt="" srcset="" />
+                    <img id="links" onClick={props.toggleDarkMode} className="dark-mode-image transition" src={props.darkMode ? Sun : Moon} alt="" srcset="" />
 
-                        : <img id="links" onClick={enableDarkMode} className="dark-mode-image" src={Moon} alt="" srcset="" />}
+
 
                 </div>
 

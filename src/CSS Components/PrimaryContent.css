@@ -1,3 +1,15 @@
+/* dark mode*/
+.dark{
+    color: white;
+    
+}
+.transition{
+    transition: all .6s linear;
+}
+
+
+
+
 .background{
     width: 100vw;
     height: 1000px;
@@ -20,9 +32,14 @@
     height: 80vh;
     width: 85vw;
     border-radius: 40px;
-    
-    
-    
+}
+.main-card-dark{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 85vw;
+    border-radius: 40px;
 }
 
 .main-card-body{
@@ -52,6 +69,9 @@
 .greeting-intro-text{
     padding-left: 2rem;
     font-size: 2rem;
+}
+.greeting-intro-text-dark{
+
 }
 .greeting-profession-text{
     margin-top: 2rem;
