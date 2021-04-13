@@ -1,42 +1,71 @@
 .background{
     width: 100vw;
-    height: 100vh;
+    height: 1000px;
     background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .main-content{
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 400px;
+    
+    
 }
 .main-card{
     background-color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     height: 80vh;
     width: 85vw;
     border-radius: 40px;
-}
-.header{
-    width: 100%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 100px;
-    background-color: grey;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    width: 100%;
-    margin-left: 10vw;
-    color: black;
-    font-size: 40px;
-}
-.main-nav{
-    display: flex;
-    align-items: center;
     
+    
+    
+}
+
+.main-card-body{
+    position: relative;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.greeting{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.greeting-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.vulcan{
+    height: 15vh;
+}
+.greeting-intro-text{
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+.greeting-profession-text{
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+
+}
+.professions{
+    padding-left: 1rem;
+    color: lightgrey;
+}
+
+/* Main card image */
+.main-card-abstract-image img{
+    margin-top: 2rem;
+    height: 20rem;
 }
