@@ -1,16 +1,12 @@
 import './App.css';
-import PrimarySection from './Components/PrimarySection';
+import PrimaryContent from './Components/PrimaryContent'
 
 
 
 function App() {
   return (
     <>
-    <div className="App" style={{backgroundColor: '#6184D8'}}>
-      <header className="App-header">
-        <PrimarySection/>
-      </header>
-    </div>
+      <PrimaryContent/>
     </>
   );
 }
