@@ -1,6 +1,6 @@
 /* dark mode*/
 .dark{
-    color: white;
+    color: #FFFBFE;
     
 }
 .transition{
@@ -26,7 +26,7 @@
     
 }
 .main-card{
-    background-color: white;
+    background-color: #FFFBFE;
     display: flex;
     flex-direction: column;
     
@@ -37,12 +37,14 @@
     justify-content: space-around;
 }
 .main-card-dark{
-    background-color: black;
+    background-color: #131515;
     display: flex;
     flex-direction: column;
     height: 80vh;
     width: 85vw;
     border-radius: 40px;
+    max-width: 1400px;
+    justify-content: space-around;
 }
 
 .main-card-body{
