@@ -7,7 +7,7 @@ export default function Header(props) {
 
 
     return (
-        <div>
+        <div className="header-wrapper">
             <header className={props.darkMode ? "header-dark transition" : "header transition"} >
                 <div className={props.darkMode ? "logo-dark transition" : "logo transition"}>
                     <h2>RO</h2>

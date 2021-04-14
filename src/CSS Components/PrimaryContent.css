@@ -13,7 +13,7 @@
 .background{
     width: 100vw;
     height: 1000px;
-    background-color: aquamarine;
+    background-color: #6184D8;
     
 }
 .main-content{
@@ -29,9 +29,12 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    
     height: 80vh;
     width: 85vw;
     border-radius: 40px;
+    max-width: 1400px;
+    justify-content: space-around;
 }
 .main-card-dark{
     background-color: black;
@@ -45,9 +48,9 @@
 .main-card-body{
     position: relative;
     justify-content: space-between;
-    margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -94,13 +97,16 @@
     white-space: nowrap;
     margin-right: auto;
     letter-spacing: .01em;
+    /*
     border-right: .15em solid purple;
     animation: 
     typing 3.5s steps(50, end),
     blink-caret .75s step-end infinite;
+    */
     padding-left: 1.25rem;
     color: lightgrey;
 }
+/*
 .animate
 {
     letter-spacing: .01em;
@@ -110,8 +116,13 @@
     blink-caret .75s step-end infinite;
     padding-left: 1.25rem;
 }
+*/
 
 /* Main card image */
+.main-card-abstract-image{
+    display: flex;
+    justify-self: center;
+}
 .main-card-abstract-image img{
     margin-top: 2rem;
     height: 20rem;
@@ -123,6 +134,11 @@
     align-self: center;
     margin-top: 1rem;
     animation: promptDown .75s step-end infinite;
+    justify-self: flex-end;
+    flex: 0 2 auto;
+}
+.chevron-down img{
+    height: 6rem;
 }
 @keyframes promptDown {
     from {transform: translate(-20px); }

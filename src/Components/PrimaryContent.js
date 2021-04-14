@@ -52,7 +52,7 @@ export default function PrimaryContent() {
                                 </div>
 
                                 <div className={darkMode ? "greeting-intro-text dark transition" : "greeting-intro-text transition"}>
-                                    <h2>My name is Reilly</h2>
+                                    <h2>My name is Reilly O'Donnell</h2>
                                 </div>
                             </div>
 
