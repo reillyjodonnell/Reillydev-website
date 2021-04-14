@@ -70,22 +70,61 @@
     padding-left: 2rem;
     font-size: 2rem;
 }
-.greeting-intro-text-dark{
 
-}
 .greeting-profession-text{
     margin-top: 2rem;
     font-size: 2rem;
     display: flex;
+    align-items: center;
+    
 
 }
+
+@keyframes typing{
+    from {width: .1%}
+    to {width: 100%}
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: purple; }
+  }
 .professions{
-    padding-left: 1rem;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: auto;
+    letter-spacing: .01em;
+    border-right: .15em solid purple;
+    animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+    padding-left: 1.25rem;
     color: lightgrey;
+}
+.animate
+{
+    letter-spacing: .01em;
+    border-right: .15em solid purple;
+    animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+    padding-left: 1.25rem;
 }
 
 /* Main card image */
 .main-card-abstract-image img{
     margin-top: 2rem;
     height: 20rem;
+}
+.chevron-down{
+    cursor: pointer;
+    pointer-events: all;
+    display: flex;
+    align-self: center;
+    margin-top: 1rem;
+    animation: promptDown .75s step-end infinite;
+}
+@keyframes promptDown {
+    from {transform: translate(-20px); }
+    to {transform: translate(5px);}
 }

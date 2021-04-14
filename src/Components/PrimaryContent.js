@@ -2,12 +2,16 @@ import React, { useEffect, useState } from 'react'
 import '../CSS Components/PrimaryContent.css'
 import Vulcan from '../Assets/Icons/Vulcan.svg'
 import Placeholder from '../Assets/Icons/Placeholder.svg'
+import WhiteDown from '../Assets/Icons/WhiteChevronDown.svg'
+import BlackDown from '../Assets/Icons/BlackChevronDown.svg'
+
 
 import Header from './Header'
 
 export default function PrimaryContent() {
     const [descriptorIndx, changeDescriptorIndx] = useState(0)
     const [darkMode, enableDarkMode] = useState(false);
+    const [display, displayNextWord] = useState(false);
 
 
 
@@ -17,17 +21,21 @@ export default function PrimaryContent() {
         const timer = setInterval(() => {
             let index = descriptorIndx;
             changeDescriptorIndx(index + 1)
+            displayNextWord(!display)
 
-        }, 4000);
+        }, 5000);
         return () => clearInterval(timer);
 
 
     })
 
+
     const toggleDarkMode = () => {
         enableDarkMode(!darkMode)
     }
     let descriptorText = description[descriptorIndx % description.length];
+
+
 
     return (
         <div className="background">
@@ -50,7 +58,7 @@ export default function PrimaryContent() {
 
                             <div className={darkMode ? "greeting-profession-text transition dark " : "greeting-profession-text transition"}>
                                 <h2>I'm a </h2>
-                                <h2 className="professions">{descriptorText}</h2>
+                                <h2 className={display ? "professions animate" : "professions"}>{descriptorText}</h2>
                             </div>
                         </div>
                         <div className="main-card-abstract-image">
@@ -58,6 +66,10 @@ export default function PrimaryContent() {
                             <img style={{ height: "20rem" }} src={Placeholder} alt="" />
                         </div>
 
+
+                    </div>
+                    <div className="chevron-down">
+                        <img src={darkMode ? WhiteDown : BlackDown} alt="" srcset="" />
                     </div>
 
 
