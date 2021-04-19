@@ -29,12 +29,13 @@
     background-color: #FFFBFE;
     display: flex;
     flex-direction: column;
-    
+    overflow: hidden;
     height: 80vh;
     width: 85vw;
     border-radius: 40px;
     max-width: 1400px;
-    justify-content: space-around;
+
+ 
 }
 .main-card-dark{
     background-color: #131515;
@@ -44,7 +45,8 @@
     width: 85vw;
     border-radius: 40px;
     max-width: 1400px;
-    justify-content: space-around;
+    overflow: hidden;
+    
 }
 
 .main-card-body{
@@ -52,35 +54,47 @@
     justify-content: space-between;
     margin-left: 10vw;
     margin-right: 10vw;
-    flex: 1 0 auto;
+    height: 70%;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .greeting{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    position: relative;
+    flex: 1 2 auto;
+    width: 100%;
+    height: 100%;
 }
 .greeting-intro{
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 5;
 }
 .vulcan{
     height: 15vh;
 }
 .greeting-intro-text{
     padding-left: 2rem;
-    font-size: 2rem;
+    font-size: 4.5vh;
+
 }
 
 .greeting-profession-text{
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 4.5vh;
     display: flex;
     align-items: center;
+    flex-shrink: 1;
     
 
 }
@@ -124,23 +138,34 @@
 .main-card-abstract-image{
     display: flex;
     justify-self: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 2 auto;
+    height: 100%;
+    width: 100%;
+  
+    
 }
 .main-card-abstract-image img{
-    margin-top: 2rem;
-    height: 20rem;
+    
+    height: 50vh;
+    
 }
 .chevron-down{
     cursor: pointer;
     pointer-events: all;
     display: flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
     margin-top: 1rem;
     animation: promptDown .75s step-end infinite;
     justify-self: flex-end;
+    width: 100%;
     flex: 0 2 auto;
 }
 .chevron-down img{
-    height: 6rem;
+    height: 8rem;
 }
 @keyframes promptDown {
     from {transform: translate(-20px); }
