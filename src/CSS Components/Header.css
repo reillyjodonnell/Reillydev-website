@@ -35,6 +35,7 @@
     margin-left: 10vw;
     color: black;
     font-size: 40px;
+    display: flex;
 }
 .logo-dark{
     width: auto;
@@ -59,4 +60,25 @@
 .dark-mode-image{
     cursor: pointer;
     pointer-events: all;
+}
+
+/* Mobile Responsiveness */
+
+.hamburger-bar
+{
+    color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10vw;
+    height: 8vh;
+    
+}
+
+@media only screen and (max-width: 800px)
+{
+    .nav-links{
+        display: none;
+    }
 }

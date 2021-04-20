@@ -14,6 +14,7 @@
     width: 100vw;
     height: 1000px;
     background-color: #6184D8;
+    overflow: hidden;
     
 }
 .main-content{
@@ -21,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    min-height: 700px;
     
     
 }
@@ -34,6 +35,7 @@
     width: 85vw;
     border-radius: 40px;
     max-width: 1400px;
+    min-height: inherit;
 
  
 }
@@ -52,9 +54,8 @@
 .main-card-body{
     position: relative;
     justify-content: space-between;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 70%;
+    margin: 4rem 10vw;
+    height: 60%;
     flex: 1 1 auto;
     display: flex;
     flex-direction: row;
@@ -65,7 +66,6 @@
 .greeting{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
     position: relative;
     flex: 1 2 auto;
     width: 100%;
@@ -85,16 +85,16 @@
 }
 .greeting-intro-text{
     padding-left: 2rem;
-    font-size: 4.5vh;
+    font-size: 2rem;
 
 }
 
 .greeting-profession-text{
-    margin-top: 2rem;
     font-size: 4.5vh;
     display: flex;
     align-items: center;
     flex-shrink: 1;
+    white-space: nowrap;
     
 
 }
@@ -119,7 +119,7 @@
     typing 3.5s steps(50, end),
     blink-caret .75s step-end infinite;
     */
-    padding-left: 1.25rem;
+    padding-left: .75rem;
     color: lightgrey;
 }
 /*
@@ -137,8 +137,7 @@
 /* Main card image */
 .main-card-abstract-image{
     display: flex;
-    justify-self: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex: 1 2 auto;
     height: 100%;
@@ -158,11 +157,11 @@
     align-items: center;
     justify-content: center;
     align-self: center;
-    margin-top: 1rem;
     animation: promptDown .75s step-end infinite;
     justify-self: flex-end;
     width: 100%;
     flex: 0 2 auto;
+    height: 100%;
 }
 .chevron-down img{
     height: 8rem;
@@ -170,4 +169,49 @@
 @keyframes promptDown {
     from {transform: translate(-20px); }
     to {transform: translate(5px);}
+}
+
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 800px)
+{
+    .main-card-abstract-image{
+        display: none;
+    }
+    .greeting{
+        max-width: inherit;
+    }
+    .greeting-intro{
+        width: inherit;
+        box-sizing: border-box;
+    }
+    .greeting-intro-text{
+        display: flex;
+        font-size: 2.6vh;
+        max-width: inherit;
+    }
+    .greeting-profession-text{
+        align-self: center;
+        justify-content: center;
+        font-size: 4vh;
+        display: flex;
+        width: 70vw;
+        justify-self: center;
+        
+    }
+    .greeting-profession-text h2{
+        font-size: 2rem;
+    }
+    .greeting-main-text
+    {
+        display: flex;
+    }
+    .professions{
+        display: flex;
+        margin-right: 0;
+        letter-spacing: 0;
+    }
+    .vulcan{
+        height: 11vh;
+    }
 }

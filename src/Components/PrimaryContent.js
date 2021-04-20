@@ -12,6 +12,7 @@ export default function PrimaryContent() {
     const [descriptorIndx, changeDescriptorIndx] = useState(0)
     const [darkMode, enableDarkMode] = useState(false);
     const [display, displayNextWord] = useState(false);
+    const [mobile, setMobile] = useState(false);
 
 
 
@@ -57,13 +58,13 @@ export default function PrimaryContent() {
                             </div>
 
                             <div className={darkMode ? "greeting-profession-text transition dark " : "greeting-profession-text transition"}>
-                                <h2>I'm a </h2>
+                                <h2 className="greeting-main-text">I'm a </h2>
                                 <h2 className={display ? "professions animate" : "professions"}>{descriptorText}</h2>
                             </div>
                         </div>
                         <div className="main-card-abstract-image">
 
-                            <img style={{ height: "20rem" }} src={Placeholder} alt="" />
+                            <img src={Placeholder} alt="" />
                         </div>
 
 
