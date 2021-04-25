@@ -36,12 +36,14 @@
     color: black;
     font-size: 40px;
     display: flex;
+    cursor: pointer;
 }
 .logo-dark{
     width: auto;
     margin-left: 10vw;
     color: white;
     font-size: 40px;
+    cursor: pointer;
 }
 .nav-links{
     display: flex;
@@ -54,6 +56,8 @@
 }
 .nav-links #links {
     padding-left: 120px;
+}
+#links h2{
     cursor: pointer;
     pointer-events: all;
 }

@@ -1,0 +1,10 @@
+.main-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-text h3{
+    display: flex;
+    font-size: 2rem;
+}
