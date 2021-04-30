@@ -18,7 +18,7 @@ export default function PrimaryContent() {
 
 
 
-    const description = ["Software Engineer", "Programmer", "Sci-fi fan", "Thinker"];
+    const description = ["Programmer", "Sci-fi fan", "Thinker"];
 
     useEffect(() => {
         console.log(activeScreen);
@@ -56,29 +56,48 @@ export default function PrimaryContent() {
 
 
     return (
-        <div className="background">
-            <section className="main-content">
-                <div className={darkMode ? "main-card-dark transition" : "main-card transition"} >
-                    <Header setActiveScreen={setActiveScreen} darkMode={darkMode} mobile={mobile} toggleDarkMode={toggleDarkMode} />
-                    {
-                        activeScreen === 1 ? <Portfolio darkMode={darkMode} />
-                            :
-                            activeScreen === 2 ? <Skills darkMode={darkMode} />
-                                :
-                                activeScreen === 3 ? <HireMe darkMode={darkMode} />
-                                    : <Home setActiveScreen={setActiveScreen} activeScreen={activeScreen} darkMode={darkMode} />
-                    }
-                </div>
-                <Down />
+        <>
+            <div className="container">
+                <section id="home" className="main-content">
+                    <div className={darkMode ? "main-card-dark transition" : "main-card transition"} >
+                        <Header style={{ position: 'sticky' }} setActiveScreen={setActiveScreen} darkMode={darkMode} mobile={mobile} toggleDarkMode={toggleDarkMode} />
+                        <Home setActiveScreen={setActiveScreen} activeScreen={activeScreen} darkMode={darkMode} />
+                    </div>
+                    <Down />
+                </section>
+                <section id="portfolio" className="main-content">
+                    <div className={darkMode ? "main-card-dark transition" : "main-card transition"} >
+                        <Header style={{ position: 'sticky' }} setActiveScreen={setActiveScreen} darkMode={darkMode} mobile={mobile} toggleDarkMode={toggleDarkMode} />
+                        <Portfolio setActiveScreen={setActiveScreen} activeScreen={activeScreen} darkMode={darkMode} />
+                    </div>
+                    <Down />
+                </section>
+                <section id="skills" className="main-content">
+                    <div className={darkMode ? "main-card-dark transition" : "main-card transition"} >
+                        <Header style={{ position: 'sticky' }} setActiveScreen={setActiveScreen} darkMode={darkMode} mobile={mobile} toggleDarkMode={toggleDarkMode} />
+                        <Skills setActiveScreen={setActiveScreen} activeScreen={activeScreen} darkMode={darkMode} />
+                    </div>
+                    <Down />
+                </section>
+                <section id="hire-me" className="main-content">
+                    <div className={darkMode ? "main-card-dark transition" : "main-card transition"} >
+                        <Header style={{ position: 'sticky' }} setActiveScreen={setActiveScreen} darkMode={darkMode} mobile={mobile} toggleDarkMode={toggleDarkMode} />
+                        <HireMe setActiveScreen={setActiveScreen} activeScreen={activeScreen} darkMode={darkMode} />
+                    </div>
+                    <Down />
+                </section>
 
 
-            </section>
-            <div>
+
+
+
+
+
 
             </div>
 
 
+        </>
 
-        </div>
     )
 }
