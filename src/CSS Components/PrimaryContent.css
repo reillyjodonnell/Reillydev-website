@@ -1,88 +1,74 @@
 /* dark mode*/
-.dark{
-    color: #FFFBFE;
-    
+.dark {
+  color: #fffbfe;
 }
-.transition{
-    transition: all .6s linear;
+.transition {
+  transition: all 0.6s linear;
 }
-
 
 /* Viewing container*/
-.container{ 
-    
-  
-  
-    
+.container {
 }
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    /* Scroll Snap */
-    scroll-snap-align: center ;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  /* Scroll Snap */
+  scroll-snap-align: center;
 }
-.main-content{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.second-content
-{
-   
-    display: flex;
-    
+.second-content {
+  display: flex;
 }
-.main-card{
-    background-color: #FFFBFE;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    height: 85vh;
-    width: 85vw;
-    border-radius: 40px;
-    max-width: 1400px;
-    min-height: 70vh;
+.main-card {
+  background-color: #fffbfe;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 85vh;
+  width: 85vw;
+  border-radius: 40px;
+  max-width: 1400px;
+  min-height: 70vh;
 }
-.main-card-dark{
-    background-color: #131515;
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    width: 85vw;
-    border-radius: 40px;
-    max-width: 1400px;
-    overflow: hidden;
-    
+.main-card-dark {
+  background-color: #131515;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 85vw;
+  border-radius: 40px;
+  max-width: 1400px;
+  overflow: hidden;
 }
 
-.main-card-body{
-    position: relative;
-    justify-content: space-between;
-    margin: 1rem 10vw;
-    height: 100%;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.main-card-body {
+  position: relative;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+  height: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-
-    overflow: hidden;
-    
+  overflow: hidden;
 }
 
-.chevron-down img{
-    cursor: pointer;
-    pointer-events: all;
-    height: 8vh;
-    position: absolute;
-    bottom: 0;
-    /* THIS IS THE ANIMATION
+.chevron-down img {
+  cursor: pointer;
+  pointer-events: all;
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  /* THIS IS THE ANIMATION
     animation-name: promptDown ;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -90,81 +76,74 @@ section{
 }
 
 @keyframes promptDown {
-from {
+  from {
     transform: translateY(0px);
-}
-75%{
+  }
+  75% {
     transform: translateY(8px);
-}
-to {
+  }
+  to {
     transform: translateY(10px);
+  }
 }
-
-}
-
 
 /* Mobile Responsiveness */
-@media only screen and (max-width: 800px)
-{
-    .background{
-        height: 1000px;
-        min-height: 100%;
-    }
-    .main-card{
-        min-height: inherit;
-    }
-    .main-card-abstract-image{
-        display: none;
-    }
-    .greeting{
-        max-width: inherit;
-    }
-    .greeting-intro{
-        width: inherit;
-        box-sizing: border-box;
-    }
-    .greeting-intro-text{
-        display: flex;
-        font-size: 2.6vh;
-        max-width: inherit;
-    }
-    .greeting-profession-text{
-        align-self: center;
-        justify-content: center;
-        font-size: 4vh;
-        display: flex;
-        width: 70vw;
-        justify-self: center;
-        
-    }
-    .greeting-profession-text h2{
-        font-size: 2rem;
-    }
-    .greeting-main-text
-    {
-        display: flex;
-    }
-    .professions{
-        display: flex;
-        margin-right: 0;
-        letter-spacing: 0;
-    }
-    .vulcan{
-        height: 11vh;
-    }
+@media only screen and (max-width: 800px) {
+  .background {
+    height: 1000px;
+    min-height: 100%;
+  }
+  .main-card {
+    min-height: inherit;
+  }
+  .main-card-abstract-image {
+    display: none;
+  }
+  .greeting {
+    max-width: inherit;
+  }
+  .greeting-intro {
+    width: inherit;
+    box-sizing: border-box;
+  }
+  .greeting-intro-text {
+    display: flex;
+    font-size: 2.6vh;
+    max-width: inherit;
+  }
+  .greeting-profession-text {
+    align-self: center;
+    justify-content: center;
+    font-size: 4vh;
+    display: flex;
+    width: 70vw;
+    justify-self: center;
+  }
+  .greeting-profession-text h2 {
+    font-size: 2rem;
+  }
+  .greeting-main-text {
+    display: flex;
+  }
+  .professions {
+    display: flex;
+    margin-right: 0;
+    letter-spacing: 0;
+  }
+  .vulcan {
+    height: 11vh;
+  }
 }
-@media only screen and (max-width: 1200px)
-{
-    .main-card-abstract-image{
-        display: none;
-    }
+@media only screen and (max-width: 1200px) {
+  .main-card-abstract-image {
+    display: none;
+  }
 }
-@media only screen and (max-height: 650px)
-{
-    .main-card, .main-card-dark {
-        height: 100%;
-        margin-top: 15vh;
-        overflow-y: scroll;
-        
-    }
+@media only screen and (max-height: 650px) {
+  .main-card,
+  .main-card-dark {
+    height: 100%;
+    margin-top: 15vh;
+    overflow-y: scroll;
+  }
 }
