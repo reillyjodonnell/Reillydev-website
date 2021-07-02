@@ -3,30 +3,43 @@ import "../CSS Components/Header.css";
 import Moon from "../Assets/Icons/Moon.svg";
 import Sun from "../Assets/Icons/Sun.svg";
 import MenuBar from "../Assets/Icons/MenuBar.svg";
+import { useTheme } from "../contexts/ThemeContext";
 
 export default function Header(props) {
+  console.log(props);
   const [active, setActive] = useState(0);
+  const { toggleDarkTheme, darkMode } = useTheme();
+
+  const pinkColor = "rgb(214 107 160)";
 
   let navigationOptions = [
     {
       id: 1,
-      name: "portfolio",
+      name: "about",
     },
     {
       id: 2,
-      name: "skills",
+      name: "portfolio",
     },
     {
       id: 3,
-      name: "hire me",
+      name: "skills",
+    },
+
+    {
+      id: 4,
+      name: "blog",
     },
   ];
 
   const updateNavigation = (key) => {
-    console.log(key);
     setActive(key);
     props.setActiveScreen(key);
   };
+
+  function enableDarkMode() {
+    toggleDarkTheme();
+  }
 
   // Loop through the list assigning values starting at 0
   // When the number is selected send that to the state
@@ -35,15 +48,11 @@ export default function Header(props) {
   return (
     <div className="header-wrapper">
       <header
-        className={
-          props.darkMode ? "header-dark transition" : "header transition"
-        }
+        className={darkMode ? "header-dark transition" : "header transition"}
       >
         <div
           onClick={() => updateNavigation(0)}
-          className={
-            props.darkMode ? "logo-dark transition" : "logo transition"
-          }
+          className={darkMode ? "logo-dark transition" : "logo transition"}
         >
           <h2>RO</h2>
         </div>
@@ -57,9 +66,7 @@ export default function Header(props) {
               <div id="links">
                 <h2
                   key={nav.id}
-                  style={
-                    active == nav.id ? { textDecoration: "underline" } : null
-                  }
+                  style={active == nav.id ? { color: pinkColor } : null}
                   onClick={() => updateNavigation(nav.id)}
                 >
                   {nav.name}
@@ -68,9 +75,9 @@ export default function Header(props) {
             ))}
             <div id="links">
               <img
-                onClick={props.toggleDarkMode}
+                onClick={enableDarkMode}
                 className="dark-mode-image transition"
-                src={props.darkMode ? Sun : Moon}
+                src={darkMode ? Sun : Moon}
                 alt=""
                 srcset=""
               />

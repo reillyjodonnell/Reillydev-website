@@ -31,7 +31,7 @@
 }
 .logo {
   width: auto;
-  margin-left: 5rem;
+  margin-left: 7rem;
   color: black;
   font-size: 40px;
   display: flex;
@@ -39,7 +39,7 @@
 }
 .logo-dark {
   width: auto;
-  margin-left: 5rem;
+  margin-left: 7rem;
   color: white;
   font-size: 40px;
   cursor: pointer;
@@ -57,7 +57,7 @@
   padding-left: 120px;
 }
 #links:last-child {
-  padding-right: 5rem;
+  padding-right: 7rem;
   margin-left: auto;
 }
 #links h2 {

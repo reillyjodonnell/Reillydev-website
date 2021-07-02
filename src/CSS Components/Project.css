@@ -1,0 +1,57 @@
+#portfolio {
+  height: 100%;
+  display: flex;
+  min-height: fit-content;
+}
+.project-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85vh;
+  width: 70vw;
+  max-width: 1400px;
+}
+.my-projects-header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: black;
+  margin-left: 46rem;
+  margin-bottom: 10rem;
+}
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40vw;
+  width: 100%;
+  border-radius: 20px;
+}
+.project-preview-image-container {
+  height: 610px;
+  width: 488px;
+  max-height: 70rem;
+  max-width: 40rem;
+}
+.project-preview-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+  background-color: white;
+}
+.project-title {
+  padding: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.project-description {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.project2 {
+  margin-top: 50rem;
+}

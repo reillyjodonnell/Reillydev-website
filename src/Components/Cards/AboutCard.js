@@ -26,8 +26,25 @@ export default function HomeCard(props) {
                   : "about-text transition"
               }
             >
-              <h2>Here's my latest project: </h2>
+              <h2>I'm Reilly O'Donnell </h2>
               <br />
+
+              <span>
+                I'm a software engineer and React Developer from Fredericksburg,
+                VA.{" "}
+              </span>
+              <br />
+              <br />
+              <span>
+                I love spending time with my family and spending time outdoors.
+                I'd like to think I have a green thumb 🌱
+              </span>
+              <br />
+              <br />
+              <span>
+                I genuinely have a passion for people and always enjoy meeting
+                new people!
+              </span>
             </div>
           </div>
           <div
@@ -38,7 +55,9 @@ export default function HomeCard(props) {
             }
           ></div>
         </div>
-        <div className="about-card-image"></div>
+        <div className="about-card-image">
+          <img src={Reilly} />
+        </div>
       </div>
     </>
   );

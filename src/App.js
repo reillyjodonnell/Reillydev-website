@@ -1,12 +1,13 @@
-import './App.css';
-import PrimaryContent from './Components/PrimaryContent'
-
-
+import "./App.css";
+import PrimaryContent from "./Components/PrimaryContent";
+import ThemeProvider from "./contexts/ThemeContext";
 
 function App() {
   return (
     <>
-      <PrimaryContent/>
+      <ThemeProvider>
+        <PrimaryContent />
+      </ThemeProvider>
     </>
   );
 }
