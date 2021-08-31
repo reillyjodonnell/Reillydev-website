@@ -9,24 +9,16 @@ export default function HomeCard(props) {
 
   return (
     <>
-      <div className="main-card-body">
+      <div className="navigation-header">
+        <h1>About Me</h1>
+      </div>
+
+      <div className="main-card-body about-background">
         <div className="greeting">
           <div className="greeting-intro">
-            <div
-              className={
-                darkMode
-                  ? "greeting-intro-text dark transition"
-                  : "greeting-intro-text transition"
-              }
-            ></div>
-            <div
-              className={
-                darkMode
-                  ? "about-text dark transition"
-                  : "about-text transition"
-              }
-            >
-              <h2>I'm Reilly O'Donnell </h2>
+            <div className="greeting-intro-text dark transition"></div>
+            <div className="about-text dark transition">
+              <h2>Hello! My name is Reilly O'Donnell </h2>
               <br />
 
               <span>

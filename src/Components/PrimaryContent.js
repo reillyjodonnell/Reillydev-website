@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../CSS Components/PrimaryContent.css";
 import Home from "./Cards/HomeCard";
-import About from "./Cards/AboutCard";
+import About from "./About";
 import Portfolio from "./Cards/PortfolioCard";
 import Card from "./Cards/Card";
 import { useTheme } from "../contexts/ThemeContext";
@@ -68,6 +68,10 @@ export default function PrimaryContent() {
           <ActiveScreen />
         </Card>
       </div>
+      <>
+        <About />
+        <Portfolio />
+      </>
     </>
   );
 }

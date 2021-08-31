@@ -1,16 +1,52 @@
+.navigation-header {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+}
+.navigation-header img {
+  margin-right: 10px;
+}
+.about-container-light {
+  padding: 0 2rem;
+  background-color: var(--blue);
+}
+.about-container-dark {
+  padding: 0 2rem;
+  background-color: var(--purple);
+}
+
+.about-background {
+  border-radius: 15px;
+  padding: 0 5rem;
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+}
+
 .about-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 2 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.gradient {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex: 1 2 auto;
   height: 100%;
   width: 100%;
+  position: relative;
+  border: 10px solid #58b09c;
+  border-radius: 15px;
 }
 .about-card-image img {
-  width: 25vw;
-  height: 50vh;
-  padding: 0 !important;
-  border-radius: 40px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .about-header-text {
@@ -39,5 +75,6 @@
 h2 {
   margin: 0;
 }
-.about-text h2 {
+.about-text span {
+  font-size: 1.4rem;
 }

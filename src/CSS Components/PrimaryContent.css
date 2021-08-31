@@ -300,9 +300,11 @@ section {
     height: 1000px;
     min-height: 100%;
   }
-  .main-card {
-    min-height: inherit;
+  .stars {
+    height: 0;
+    width: 0;
   }
+
   .main-card-abstract-image {
     display: none;
   }
@@ -346,11 +348,25 @@ section {
     display: none;
   }
 }
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 700px) {
   .main-card,
   .main-card-dark {
     height: 100%;
-    margin-top: 15vh;
-    overflow-y: scroll;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .header-wrapper > header {
+    border-radius: 0;
+  }
+  .logo,
+  .logo-dark {
+    margin-left: 2rem !important;
+  }
+  .main-card-body {
+    margin: 2rem;
+  }
+  .greeting-intro-text h2 {
+    font-size: 3rem;
   }
 }

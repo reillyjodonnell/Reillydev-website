@@ -34,7 +34,6 @@ export default function Header(props) {
 
   const updateNavigation = (key) => {
     setActive(key);
-    props.setActiveScreen(key);
   };
 
   function enableDarkMode() {
@@ -82,6 +81,7 @@ export default function Header(props) {
                 srcset=""
               />
             </div>
+            <img className="hamburger-bar" src={MenuBar} />
           </div>
         )}
       </header>

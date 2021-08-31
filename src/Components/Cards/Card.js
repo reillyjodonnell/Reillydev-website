@@ -12,11 +12,7 @@ export default function Card(props, setActiveScreen, mobile) {
           darkMode ? "main-card-dark transition" : "main-card transition"
         }
       >
-        <Header
-          style={{ position: "sticky" }}
-          setActiveScreen={props.setActiveScreen}
-          mobile={props.mobile}
-        />
+        <Header style={{ position: "sticky" }} mobile={props.mobile} />
         {props.children}
       </div>
     </section>

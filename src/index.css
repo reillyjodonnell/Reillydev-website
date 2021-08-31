@@ -14,6 +14,10 @@ body {
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  /*CSS VARIABLES*/
+  --blue: rgb(97, 132, 216);
+  --green: #58b09c;
+  --purple: #3f3d56;
 }
 
 code {
