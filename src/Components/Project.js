@@ -23,18 +23,6 @@ export default function Projects() {
             <span>Project description</span>
           </div>
         </div>
-
-        <div className="project-preview project2">
-          <div className="project-preview-image-container">
-            <img className="project-preview-image" src={Aron} />
-          </div>
-          <div className="project-title">
-            <span>Project 2</span>
-          </div>
-          <div className="project-description">
-            <span>Project description</span>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   min-height: fit-content;
+  max-width: 1000px;
 }
 .project-container {
   display: flex;

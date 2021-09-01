@@ -7,11 +7,11 @@
   margin-right: 10px;
 }
 .about-container-light {
-  margin: 0 6rem;
+  margin: 0 9rem;
   background-color: var(--blue);
 }
 .about-container-dark {
-  margin: 0 6rem;
+  margin: 0 9rem;
   background-color: var(--purple);
 }
 
