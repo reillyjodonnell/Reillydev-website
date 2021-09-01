@@ -7,17 +7,16 @@
   margin-right: 10px;
 }
 .about-container-light {
-  padding: 0 2rem;
+  margin: 0 6rem;
   background-color: var(--blue);
 }
 .about-container-dark {
-  padding: 0 2rem;
+  margin: 0 6rem;
   background-color: var(--purple);
 }
 
 .about-background {
   border-radius: 15px;
-  padding: 0 5rem;
   margin: 5rem;
   display: flex;
   align-items: center;
@@ -77,4 +76,5 @@ h2 {
 }
 .about-text span {
   font-size: 1.4rem;
+  color: white;
 }

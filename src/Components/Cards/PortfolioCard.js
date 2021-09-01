@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Reilly from "../../Assets/Headshot.jpg";
+import Planet from "../../Assets/Icons/Planet.svg";
 import "../../CSS Components/Home.css";
 import "../../CSS Components/Cards/AboutCard.css";
 import { useTheme } from "../../contexts/ThemeContext";
@@ -26,8 +26,11 @@ export default function HomeCard(props) {
                   : "about-text transition"
               }
             >
-              <h2>Here's my latest project: </h2>
               <br />
+            </div>
+            <div className="navigation-header">
+              <img src={Planet} />
+              <h1>About Me</h1>
             </div>
           </div>
           <div
@@ -38,7 +41,6 @@ export default function HomeCard(props) {
             }
           ></div>
         </div>
-        <div className="about-card-image"></div>
       </div>
     </>
   );

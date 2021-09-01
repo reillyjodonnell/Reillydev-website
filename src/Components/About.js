@@ -36,14 +36,19 @@ export default function HomeCard(props) {
                   <h1>About Me</h1>
                 </div>
                 <span>
-                  Hello! My name is Reilly O'Donnell and I'm a software engineer
-                  and React Developer from Fredericksburg, VA.
+                  Hello! My name is Reilly O'Donnell - I absolutely love the
+                  process of creating things through code. It involves a
+                  combination of some of my favorite things: logic, creativity,
+                  and computers!
                 </span>
                 <br />
                 <br />
                 <span>
                   I love spending time with my family and spending time
-                  outdoors. I'd like to think I have a green thumb 🪴
+                  outdoors. I'd like to think I have a green thumb 🪴 I also love
+                  to go camping, just not during the summer when it's in the
+                  90's. I'm an avid sci-fi fan! I'm currently reading the last
+                  few books of the Foundation series.
                 </span>
                 <br />
                 <br />
