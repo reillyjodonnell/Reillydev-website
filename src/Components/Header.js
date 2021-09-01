@@ -31,9 +31,18 @@ export default function Header(props) {
     },
   ];
 
-  const updateNavigation = (key) => {
-    setActive(key);
-  };
+  function scrollToRef(id) {
+    switch (id) {
+      case 1:
+        props.scrollToAbout();
+        break;
+      case 2:
+        props.scrollToPortfolio();
+        break;
+      default:
+        break;
+    }
+  }
 
   function enableDarkMode() {
     toggleDarkTheme();
@@ -62,7 +71,7 @@ export default function Header(props) {
                 <h2
                   key={nav.id}
                   style={active == nav.id ? { color: pinkColor } : null}
-                  onClick={props.scroll}
+                  onClick={() => scrollToRef(nav.id)}
                 >
                   {nav.name}
                 </h2>

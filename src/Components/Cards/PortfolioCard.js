@@ -3,6 +3,7 @@ import Planet from "../../Assets/Icons/Planet.svg";
 import "../../CSS Components/Home.css";
 import "../../CSS Components/Cards/AboutCard.css";
 import { useTheme } from "../../contexts/ThemeContext";
+import Project from "../Project";
 
 export default function HomeCard(props) {
   const { darkMode } = useTheme();
@@ -40,6 +41,7 @@ export default function HomeCard(props) {
                 : "greeting-profession-text transition"
             }
           ></div>
+          <Project />
         </div>
       </div>
     </>

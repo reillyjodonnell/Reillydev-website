@@ -11,7 +11,6 @@ export default function Projects() {
       id="portfolio"
       className={darkMode ? "main-content dark" : "main-content light"}
     >
-      <span className="my-projects-header">What I've worked on</span>
       <div className="project-container">
         <div className="project-preview project1">
           <div className="project-preview-image-container">

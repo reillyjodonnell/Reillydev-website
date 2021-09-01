@@ -12,15 +12,23 @@ export default function PrimaryContent() {
   const aboutRef = useRef();
   const portfolioRef = useRef();
 
-  function handleBackClick() {
+  function scrollToAbout() {
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+  function scrollToPortfolio() {
+    portfolioRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
     <>
       <div className="stars"> </div>
       <div className="container">
-        <Card id="home" content="home-content" scroll={handleBackClick}>
+        <Card
+          id="home"
+          content="home-content"
+          scrollToPortfolio={scrollToPortfolio}
+          scrollToAbout={scrollToAbout}
+        >
           <Home />
         </Card>
       </div>
