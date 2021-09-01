@@ -15,8 +15,9 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   /*CSS VARIABLES*/
-  --blue: rgb(97, 132, 216);
+  --blue: #6184d8;
   --green: #58b09c;
+  --red: #b5446e;
   --purple: #3f3d56;
   --grey: #868686b3;
 }

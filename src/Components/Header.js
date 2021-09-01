@@ -6,7 +6,6 @@ import MenuBar from "../Assets/Icons/MenuBar.svg";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function Header(props) {
-  console.log(props);
   const [active, setActive] = useState(0);
   const { toggleDarkTheme, darkMode } = useTheme();
 
@@ -49,10 +48,7 @@ export default function Header(props) {
       <header
         className={darkMode ? "header-dark transition" : "header transition"}
       >
-        <div
-          onClick={() => updateNavigation(0)}
-          className={darkMode ? "logo-dark transition" : "logo transition"}
-        >
+        <div className={darkMode ? "logo-dark transition" : "logo transition"}>
           <h2>RO</h2>
         </div>
         {props.mobile ? (
@@ -66,7 +62,7 @@ export default function Header(props) {
                 <h2
                   key={nav.id}
                   style={active == nav.id ? { color: pinkColor } : null}
-                  onClick={() => updateNavigation(nav.id)}
+                  onClick={props.scroll}
                 >
                   {nav.name}
                 </h2>

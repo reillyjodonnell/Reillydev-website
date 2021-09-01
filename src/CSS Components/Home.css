@@ -175,19 +175,56 @@
     font-size: 1rem;
     display: flex;
   }
-  .professions {
-    display: flex;
-    margin-right: 0;
-    letter-spacing: 0;
-  }
+
   .vulcan {
     height: 11vh;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .main-card-abstract-image {
-    display: none;
+@media only screen and (max-height: 830px) and (max-width: 415px) {
+  .greeting > div {
+    flex: 0 0;
+  }
+  .main-card,
+  .main-card-dark {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .greeting {
+    height: fit-content;
+    padding-bottom: 10rem;
+  }
+
+  .header-wrapper > header {
+    border-radius: 0;
+  }
+  .logo,
+  .logo-dark {
+    margin-left: 2rem !important;
+  }
+  .main-card-body {
+    margin: 2rem;
+  }
+
+  .greeting-intro-text h2 {
+    font-size: 3rem;
+  }
+  .greeting-intro-text span {
+    font-size: 1.2rem;
+  }
+  .greeting-intro-name-text,
+  .name,
+  .professions {
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+  }
+  .typewriter {
+    display: inline-block;
   }
 }
-@media only screen and (max-height: 840px) {
+/*Fix the issues with iPhone 5's Display*/
+@media only screen and (max-width: 331px) and (max-height: 569px) {
+  .main-card-body {
+    display: block;
+  }
 }

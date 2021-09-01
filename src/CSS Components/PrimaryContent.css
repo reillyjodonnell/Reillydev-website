@@ -334,39 +334,13 @@ section {
   .greeting-main-text {
     display: flex;
   }
-  .professions {
-    display: flex;
-    margin-right: 0;
-    letter-spacing: 0;
-  }
+
   .vulcan {
     height: 11vh;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   .main-card-abstract-image {
     display: none;
-  }
-}
-@media only screen and (max-height: 700px) {
-  .main-card,
-  .main-card-dark {
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .header-wrapper > header {
-    border-radius: 0;
-  }
-  .logo,
-  .logo-dark {
-    margin-left: 2rem !important;
-  }
-  .main-card-body {
-    margin: 2rem;
-  }
-  .greeting-intro-text h2 {
-    font-size: 3rem;
   }
 }

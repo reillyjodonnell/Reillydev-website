@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import { useTheme } from "../../contexts/ThemeContext";
+import Home from "../Cards/HomeCard";
 
 export default function Card(props, setActiveScreen, mobile) {
   const { darkMode } = useTheme();
@@ -12,8 +13,12 @@ export default function Card(props, setActiveScreen, mobile) {
           darkMode ? "main-card-dark transition" : "main-card transition"
         }
       >
-        <Header style={{ position: "sticky" }} mobile={props.mobile} />
-        {props.children}
+        <Header
+          scroll={props.scroll}
+          style={{ position: "sticky" }}
+          mobile={props.mobile}
+        />
+        <Home />
       </div>
     </section>
   );
