@@ -21,6 +21,14 @@ body {
   --grey: #868686b3;
 }
 
+/*Dark Mode */
+.dark-text {
+  color: black;
+}
+.light-text {
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

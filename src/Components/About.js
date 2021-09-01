@@ -5,6 +5,7 @@ import "../CSS Components/Cards/AboutCard.css";
 import { useTheme } from "../contexts/ThemeContext";
 import Satellite from "../Assets/Icons/Satellite.svg";
 import Plant from "../Assets/Icons/Plant.svg";
+import Pacman from "../Assets/Icons/Pacman.svg";
 
 export default function HomeCard(props) {
   const { darkMode } = useTheme();
@@ -39,7 +40,8 @@ export default function HomeCard(props) {
                   Hello! My name is Reilly O'Donnell - I absolutely love the
                   process of creating things through code. It involves a
                   combination of some of my favorite things: logic, creativity,
-                  and computers!
+                  and computers! I genuinely have a passion for people and
+                  always enjoy meeting new people!
                 </span>
                 <br />
                 <br />
@@ -53,9 +55,17 @@ export default function HomeCard(props) {
                 <br />
                 <br />
                 <span>
-                  I genuinely have a passion for people and always enjoy meeting
-                  new people!
+                  Here's some of the technologies I've been working with:
                 </span>
+                <br />
+                <ul className="technology-list light-text">
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>Angular</li>
+                  <li>SQLite</li>
+                  <li>NodeJS</li>
+                  <li>Electron</li>
+                </ul>
               </div>
             </div>
             <div
