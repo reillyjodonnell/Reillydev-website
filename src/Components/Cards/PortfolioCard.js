@@ -30,7 +30,7 @@ export default function HomeCard(props) {
             </div>
             <div className="navigation-header">
               <img src={Planet} />
-              <h1>About Me</h1>
+              <h1>Some Of My Projects:</h1>
             </div>
           </div>
           <div
