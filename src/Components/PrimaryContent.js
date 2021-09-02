@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import "../CSS Components/PrimaryContent.css";
 import Home from "./Cards/HomeCard";
 import About from "./About";
-import Portfolio from "./Cards/PortfolioCard";
 import Card from "./Cards/Card";
+import Portfolio from "./Portfolio";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function PrimaryContent() {
@@ -37,7 +37,7 @@ export default function PrimaryContent() {
           <About />
         </div>
         <div ref={portfolioRef}>
-          <Portfolio />
+          <Portfolio darkMode={darkMode} />
         </div>
       </>
     </>

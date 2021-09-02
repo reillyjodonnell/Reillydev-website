@@ -7,17 +7,14 @@
   margin-right: 10px;
 }
 .about-container-light {
-  margin: 0 9rem;
   background-color: var(--blue);
 }
 .about-container-dark {
-  margin: 0 9rem;
   background-color: var(--purple);
 }
 
 .about-background {
   border-radius: 15px;
-  margin: 5rem;
   display: flex;
   align-items: center;
 }

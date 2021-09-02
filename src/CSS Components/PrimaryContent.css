@@ -6,6 +6,13 @@
   color: black;
 }
 
+/* Sections */
+section {
+  margin: 0px auto;
+  padding: 0px 0px 100px 0px;
+  max-width: 1000px;
+}
+
 /* Stars */
 @keyframes animateStars {
   from {
@@ -215,7 +222,7 @@
   overflow-x: hidden;
   z-index: 100;
 }
-section {
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,9 +258,6 @@ section {
   border-radius: 40px;
   max-width: 1400px;
   overflow: hidden;
-}
-#portfolio {
-  margin-top: 10rem;
 }
 
 .main-card-body {

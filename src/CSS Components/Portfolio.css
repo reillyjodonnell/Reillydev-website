@@ -1,0 +1,37 @@
+#portfolio {
+}
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.portfolio-header {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: flex-start;
+}
+.project {
+  display: flex;
+}
+.project-overview {
+  text-align: right;
+  margin-left: auto;
+}
+
+.project-image-container {
+  width: 600px;
+  height: 350px;
+}
+.project-image-fit {
+  height: 100%;
+  object-fit: cover; /*magic*/
+}
+.project-title {
+  color: white;
+  padding-bottom: 1rem;
+}
+.project-description {
+  color: white;
+}
