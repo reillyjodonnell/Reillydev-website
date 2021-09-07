@@ -19,14 +19,12 @@ export default function Project(props) {
           <span>{props.projectDescription}</span>
         </div>
         <div className="project-technologies">
-          <span className="list-of-technology-title">Technologies used:</span>
-          <div className="list-of-technology-icons">
+          <div className="list-of-technology">
             {props.technologiesIcons.map((icon, index) => {
               const text = props.technologies[index];
               return (
                 <div className="technologies-icon">
-                  <img src={icon} />
-                  <span></span>
+                  <span>{text}</span>
                 </div>
               );
             })}

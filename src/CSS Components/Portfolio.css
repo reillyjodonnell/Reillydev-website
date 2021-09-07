@@ -28,13 +28,14 @@
 }
 
 .project-image-container {
-  width: 650px;
-  height: 350px;
+  width: 600px;
+  height: 325px;
   opacity: 0.99;
 }
 .project-image-fit {
   height: 100%;
-  object-fit: cover; /*magic*/
+  /*object-fit: cover; /*magic*/
+  object-fit: contain;
   position: absolute;
   z-index: -1;
   width: 100%;
