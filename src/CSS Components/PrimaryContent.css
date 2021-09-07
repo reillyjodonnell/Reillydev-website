@@ -246,8 +246,12 @@ section {
   height: 85vh;
   width: 85vw;
   border-radius: 40px;
-  max-width: 1400px;
   min-height: 70vh;
+}
+.main-card,
+.main-card-dark {
+  max-width: 1200px;
+  max-height: 750px;
 }
 .main-card-dark {
   background-color: #131515;
@@ -256,19 +260,19 @@ section {
   height: 85vh;
   width: 85vw;
   border-radius: 40px;
-  max-width: 1400px;
   overflow: hidden;
 }
 
 .main-card-body {
   position: relative;
   justify-content: space-between;
-  margin: 4rem 7rem;
+  margin: 4rem 6rem;
   height: 100%;
   flex: 1 1 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 1000px;
 
   overflow: hidden;
 }

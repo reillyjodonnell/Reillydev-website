@@ -31,7 +31,7 @@
 }
 .logo {
   width: auto;
-  margin-left: 7rem;
+  margin-left: 6rem;
   color: #58b09c;
   font-size: 40px;
   display: flex;
@@ -39,7 +39,7 @@
 }
 .logo-dark {
   width: auto;
-  margin-left: 7rem;
+  margin-left: 6rem;
   color: #58b09c;
   font-size: 40px;
   cursor: pointer;
