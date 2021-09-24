@@ -35,12 +35,21 @@ export default function Skills() {
 
               <br />
               <div className="social-list">
-                <FontAwesomeIcon
-                  className="fa-2x hover:text-red-500"
-                  icon={faTwitter}
-                />
-                <FontAwesomeIcon className="fa-2x" icon={faGithub} />
-                <FontAwesomeIcon className="fa-2x" icon={faLinkedin} />
+                <a target="_blank" href="https://twitter.com/reillyjodonnell">
+                  <FontAwesomeIcon className="fa-lg" icon={faTwitter} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.github.com/reillyjodonnell/"
+                >
+                  <FontAwesomeIcon className="fa-lg" icon={faGithub} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/reillyjodonnell/"
+                >
+                  <FontAwesomeIcon className="fa-lg" icon={faLinkedin} />
+                </a>
               </div>
             </div>
           </div>

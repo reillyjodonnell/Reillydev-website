@@ -8,10 +8,11 @@ body {
   height: 100vh;
 }
 #root {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   /* CSS Smooth Scroll */
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   /*CSS VARIABLES*/
@@ -21,6 +22,7 @@ body {
   --red: #b5446e;
   --purple: #3f3d56;
   --grey: #868686b3;
+  --dark-grey: #222222;
 }
 
 /*Dark Mode */
@@ -34,4 +36,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a {
+  color: inherit;
 }

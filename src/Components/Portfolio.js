@@ -2,12 +2,16 @@ import React from "react";
 import Planet from "../Assets/Icons/Planet.svg";
 import Memesfr from "../Assets/Screenshots/Desktop.png";
 import "../CSS Components/Portfolio.css";
-import ReactIcon from "../Assets/Icons/React.svg";
-import JavaScript from "../Assets/Icons/JavaScript.svg";
-import MaterialUI from "../Assets/Icons/MaterialUI.svg";
-import Jest from "../Assets/Icons/Jest.svg";
-import Firebase from "../Assets/Icons/Firebase.svg";
+import { ReactComponent as ReactIcon } from "../Assets/Icons/React.svg";
+import { ReactComponent as JavaScript } from "../Assets/Icons/JavaScript.svg";
+import { ReactComponent as MaterialUI } from "../Assets/Icons/MaterialUI.svg";
+import { ReactComponent as Jest } from "../Assets/Icons/Jest.svg";
+import { ReactComponent as Firebase } from "../Assets/Icons/Firebase.svg";
+import { ReactComponent as CSSIcon } from "../Assets/Icons/CSS.svg";
+
 import Project from "./Project";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Portfolio({ darkMode }) {
   return (
@@ -37,7 +41,7 @@ export default function Portfolio({ darkMode }) {
               Firebase,
               JavaScript,
               MaterialUI,
-              Jest,
+              CSSIcon,
             ]}
           />
         </div>

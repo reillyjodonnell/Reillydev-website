@@ -19,7 +19,6 @@
 }
 .project-technologies {
   display: flex;
-  background-color: rgba(184, 184, 184, 0.281);
 }
 .list-of-technology-title {
   font-size: 1.2rem;
@@ -30,6 +29,7 @@
   align-items: center;
   width: 100%;
   max-width: inherit;
+  margin: 1rem o;
 }
 
 .technologies-icon {
@@ -40,10 +40,43 @@
   color: white;
   white-space: nowrap;
 }
+.dev-icon {
+  margin-bottom: 0.5rem;
+}
+
 .technologies-icon img {
   width: 25px;
   height: 25px;
 }
 .technologies-icon:last-child {
   margin: 0 0;
+}
+.project-links {
+  margin-top: 1rem;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.action-icon {
+  background-color: var(--dark-grey);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+.action-icon img {
+  width: 34px;
+  height: 34px;
+}
+.action-icon span {
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
 }

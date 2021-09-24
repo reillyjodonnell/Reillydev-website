@@ -1,4 +1,6 @@
+import Github from "../Assets/Icons/Github2.svg";
 import React from "react";
+import ExternalLink from "../Assets/Icons/ExternalLink.svg";
 import "../CSS Components/Project.css";
 
 export default function Project(props) {
@@ -20,11 +22,12 @@ export default function Project(props) {
         </div>
         <div className="project-technologies">
           <div className="list-of-technology">
-            {props.technologiesIcons.map((icon, index) => {
-              const text = props.technologies[index];
+            {props.technologiesIcons.map((Icon, index) => {
+              //const text = props.technologies[index];
               return (
                 <div className="technologies-icon">
-                  <span>{text}</span>
+                  <Icon className="dev-icon" />
+                  <span>{props.technologies[index]}</span>
                 </div>
               );
             })}
@@ -32,7 +35,21 @@ export default function Project(props) {
         </div>
 
         <div className="project-links">
-          <span>These are the links</span>
+          <a href="https://memesfr.com" target="_blank">
+            <div className="action-icon">
+              <img src={ExternalLink} />
+              <span>View Website</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/reillyjodonnell/Memesfr_production"
+            target="_blank"
+          >
+            <div className="action-icon">
+              <img src={Github} />
+              <span>View Code</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
