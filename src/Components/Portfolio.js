@@ -40,48 +40,6 @@ export default function Portfolio({ darkMode }) {
               Jest,
             ]}
           />
-          <Project
-            projectImage={Memesfr}
-            projectTitle="Memesfr"
-            projectDescription="A full stack social media application that allows users to
-                  share memes within the community. Users can post, like, and
-                  favorite memes."
-            technologies={[
-              "React",
-              "Firebase",
-              "JavaScript",
-              "Material-UI",
-              "CSS",
-            ]}
-            technologiesIcons={[
-              ReactIcon,
-              Firebase,
-              JavaScript,
-              MaterialUI,
-              Jest,
-            ]}
-          />
-          <Project
-            projectImage={Memesfr}
-            projectTitle="Memesfr"
-            projectDescription="A full stack social media application that allows users to
-                  share memes within the community. Users can post, like, and
-                  favorite memes."
-            technologies={[
-              "React",
-              "Firebase",
-              "JavaScript",
-              "Material-UI",
-              "CSS",
-            ]}
-            technologiesIcons={[
-              ReactIcon,
-              Firebase,
-              JavaScript,
-              MaterialUI,
-              Jest,
-            ]}
-          />
         </div>
       </section>
     </>

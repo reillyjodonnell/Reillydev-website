@@ -16,6 +16,8 @@ export default function Card(props, setActiveScreen, mobile) {
         <Header
           scrollToAbout={props.scrollToAbout}
           scrollToPortfolio={props.scrollToPortfolio}
+          scrollToBlog={props.scrollToBlog}
+          scrollToContact={props.scrollToContact}
           style={{ position: "sticky" }}
           mobile={props.mobile}
         />

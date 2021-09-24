@@ -141,6 +141,9 @@
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
+  #home {
+    height: 100%;
+  }
   .background {
     height: 1000px;
     min-height: 100%;
@@ -150,9 +153,6 @@
   }
   .main-card-abstract-image {
     display: none;
-  }
-  .greeting {
-    max-width: inherit;
   }
   .greeting-intro {
     width: inherit;
@@ -186,13 +186,12 @@
   }
   .main-card,
   .main-card-dark {
-    height: 100%;
+    height: 80vh;
     width: 100%;
     border-radius: 0;
   }
-  .greeting {
-    height: fit-content;
-    padding-bottom: 10rem;
+  .main-card-body {
+    justify-content: center;
   }
 
   .header-wrapper > header {
@@ -226,5 +225,40 @@
 @media only screen and (max-width: 331px) and (max-height: 569px) {
   .main-card-body {
     display: block;
+  }
+}
+/*iPhone 5*/
+@media only screen and (max-width: 322px) and (max-height: 570px) {
+  .main-card-dark,
+  .main-card {
+    height: 100vh;
+  }
+  .main-card-body {
+    padding-top: 1rem;
+  }
+  .about-container-dark,
+  .about-container {
+    margin: 0 !important;
+  }
+
+  body span {
+    line-height: 1.75;
+  }
+  .greeting-intro-name-text {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .professions {
+    font-size: 1em;
+    line-height: 5px;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about-text {
+    margin: 0;
   }
 }

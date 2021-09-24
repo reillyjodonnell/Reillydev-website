@@ -92,3 +92,41 @@ h2 {
   align-items: center;
   margin-right: auto;
 }
+@media only screen and (max-width: 800px) {
+  .about-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .about-container-dark,
+  .about-container-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 1.5rem !important;
+    width: auto !important;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .navigation-header {
+    margin-right: auto;
+  }
+  .gradient {
+    height: 70%;
+    width: 70%;
+  }
+  .technology-list {
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+  }
+}

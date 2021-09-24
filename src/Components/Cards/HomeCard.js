@@ -11,13 +11,14 @@ export default function HomeCard(props) {
   const [mobile, displayMobile] = useState(false);
   const { darkMode } = useTheme();
 
-  const description = [
-    "Sci-fi fan",
-    "Software Engineer",
-    "JavaScript Developer",
-    "Programmer",
-    "React Developer",
-  ];
+  // const description = [
+  //   "Sci-fi fan",
+  //   "Software Engineer",
+  //   "JavaScript Developer",
+  //   "Programmer",
+  //   "React Developer",
+  // ];
+  const description = ["Software Engineer", "JavaScript Developer"];
 
   useEffect(() => {
     const timer = setInterval(() => {

@@ -33,7 +33,7 @@ export default function Skills() {
                 >
                   <div className="navigation-header">
                     <img src={Satellite} />
-                    <h1>My Skills</h1>
+                    <h1>Latest Writings</h1>
                   </div>
                   <span>
                     Hello! My name is Reilly O'Donnell - I absolutely love the

@@ -52,9 +52,46 @@
 }
 .project-description {
   color: white;
+  font-size: 1.1rem;
 }
 .project-technologies {
   display: flex;
   flex-direction: column;
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio-container,
+  .portfolio-container-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 1.5rem;
+    width: auto !important;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100% !important;
+  }
+  .project-overview {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    text-align: left;
+    padding-left: 0;
+  }
+  .project-image-container {
+    height: 275px;
+  }
+  .project-title {
+    margin-top: 1rem;
+    margin-bottom: 0 !important;
+  }
+  .project-technologies {
+    width: 100%;
+  }
 }

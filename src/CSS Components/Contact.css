@@ -1,0 +1,13 @@
+#contact {
+  margin: 0px auto;
+  padding: 0px 0px 50px 0px;
+  width: 1000px;
+}
+.fa-2x:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}

@@ -22,12 +22,12 @@ export default function Header(props) {
     },
     {
       id: 3,
-      name: "skills",
+      name: "writings",
     },
 
     {
       id: 4,
-      name: "blog",
+      name: "contact",
     },
   ];
 
@@ -38,6 +38,12 @@ export default function Header(props) {
         break;
       case 2:
         props.scrollToPortfolio();
+        break;
+      case 3:
+        props.scrollToBlog();
+        break;
+      case 4:
+        props.scrollToContact();
         break;
       default:
         break;
