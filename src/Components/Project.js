@@ -9,7 +9,11 @@ export default function Project(props) {
       <div className="project-image">
         <div className="project-image-container">
           <div className="portfolio-image-filter">
-            <img className="project-image-fit" src={props.projectImage} />
+            <img
+              className="project-image-fit"
+              alt=""
+              src={props.projectImage}
+            />
           </div>
         </div>
       </div>
@@ -25,8 +29,8 @@ export default function Project(props) {
             {props.technologiesIcons.map((Icon, index) => {
               //const text = props.technologies[index];
               return (
-                <div className="technologies-icon">
-                  <Icon className="dev-icon" />
+                <div key={index} className="technologies-icon">
+                  <Icon key={index} className="dev-icon" />
                   <span>{props.technologies[index]}</span>
                 </div>
               );
@@ -35,18 +39,19 @@ export default function Project(props) {
         </div>
 
         <div className="project-links">
-          <a href="https://memesfr.com" target="_blank">
+          <a href="https://memesfr.com" rel="noreferrer" target="_blank">
             <div className="action-icon">
-              <img src={ExternalLink} />
+              <img alt="website redirect" src={ExternalLink} />
               <span>View Website</span>
             </div>
           </a>
           <a
             href="https://github.com/reillyjodonnell/Memesfr_production"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="action-icon">
-              <img src={Github} />
+              <img alt="the cat logo of Github" src={Github} />
               <span>View Code</span>
             </div>
           </a>

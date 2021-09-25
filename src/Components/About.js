@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Reilly from "../Assets/Headshot.jpg";
 import "../CSS Components/Home.css";
 import "../CSS Components/Cards/AboutCard.css";
 import { useTheme } from "../contexts/ThemeContext";
 import Satellite from "../Assets/Icons/Satellite.svg";
-import Plant from "../Assets/Icons/Plant.svg";
-import Pacman from "../Assets/Icons/Pacman.svg";
 
 export default function HomeCard(props) {
   const { darkMode } = useTheme();
@@ -36,7 +34,7 @@ export default function HomeCard(props) {
                   }
                 >
                   <div className="navigation-header">
-                    <img src={Satellite} />
+                    <img alt="sattellite" src={Satellite} />
                     <h1>About Me</h1>
                   </div>
                   <span>
@@ -81,7 +79,7 @@ export default function HomeCard(props) {
             </div>
             <div className="gradient">
               <div className="about-card-image">
-                <img src={Reilly} />
+                <img alt="me!" src={Reilly} />
               </div>
             </div>
           </div>

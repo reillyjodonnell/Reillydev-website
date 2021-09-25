@@ -1,5 +1,4 @@
 import React from "react";
-import About from "./About";
 import "../CSS Components/Skills.css";
 import { useTheme } from "../contexts/ThemeContext";
 import Satellite from "../Assets/Icons/Comet.svg";
@@ -32,7 +31,7 @@ export default function Skills() {
                   }
                 >
                   <div className="navigation-header">
-                    <img src={Satellite} />
+                    <img alt="cartoon satellite" src={Satellite} />
                     <h1>Latest Writings</h1>
                   </div>
                   <span>

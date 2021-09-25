@@ -25,7 +25,6 @@ export default function ThemeProvider({ children }) {
     }
   });
 
-  var charcoal = "#373F51";
   var matching = "#3f3d56";
   function enableDarkMode() {
     document.body.style.backgroundColor = matching;

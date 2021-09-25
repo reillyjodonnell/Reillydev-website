@@ -1,5 +1,4 @@
 import React from "react";
-import About from "./About";
 import "../CSS Components/Contact.css";
 import {
   faTwitter,
@@ -29,23 +28,29 @@ export default function Skills() {
               }
             >
               <div className="navigation-header">
-                <img src={Alien} />
+                <img alt="alien" src={Alien} />
                 <h1>Contact Me</h1>
               </div>
 
               <br />
               <div className="social-list">
-                <a target="_blank" href="https://twitter.com/reillyjodonnell">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/reillyjodonnell"
+                >
                   <FontAwesomeIcon className="fa-lg" icon={faTwitter} />
                 </a>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.github.com/reillyjodonnell/"
                 >
                   <FontAwesomeIcon className="fa-lg" icon={faGithub} />
                 </a>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/reillyjodonnell/"
                 >
                   <FontAwesomeIcon className="fa-lg" icon={faLinkedin} />

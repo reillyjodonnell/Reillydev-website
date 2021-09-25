@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../CSS Components/Home.css";
 import Typewriter from "typewriter-effect";
 import Space from "../../Assets/Space.svg";
@@ -6,34 +6,15 @@ import Space2 from "../../Assets/Rocket.svg";
 import { useTheme } from "../../contexts/ThemeContext";
 
 export default function HomeCard(props) {
-  const [descriptorIndx, changeDescriptorIndx] = useState(0);
-  const [display, displayNextWord] = useState(false);
-  const [mobile, displayMobile] = useState(false);
   const { darkMode } = useTheme();
 
-  // const description = [
-  //   "Sci-fi fan",
-  //   "Software Engineer",
-  //   "JavaScript Developer",
-  //   "Programmer",
-  //   "React Developer",
-  // ];
-  const description = ["Software Engineer", "JavaScript Developer"];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      let x = window.innerWidth;
-      if (x <= 1300) {
-        displayMobile(true);
-      } else displayMobile(false);
-
-      let index = descriptorIndx;
-      changeDescriptorIndx(index + 1);
-      displayNextWord((prevState) => !prevState);
-    }, 4000);
-    return () => clearInterval(timer);
-  });
-  let descriptorText = description[descriptorIndx % description.length];
+  const description = [
+    "Sci-fi fan",
+    "Software Engineer",
+    "JavaScript Developer",
+    "Programmer",
+    "React Developer",
+  ];
 
   return (
     <>
@@ -91,9 +72,17 @@ export default function HomeCard(props) {
         </div>
         <div className="main-card-abstract-image">
           {darkMode ? (
-            <img className="abstract-image" src={Space} />
+            <img
+              alt="starry sky with rocket"
+              className="abstract-image"
+              src={Space}
+            />
           ) : (
-            <img className="abstract-image" src={Space2} />
+            <img
+              alt="starry sky with rocket"
+              className="abstract-image"
+              src={Space2}
+            />
           )}
         </div>
       </div>

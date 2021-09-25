@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../CSS Components/Header.css";
 import Moon from "../Assets/Icons/Moon.svg";
 import Sun from "../Assets/Icons/Sun.svg";
@@ -6,10 +6,7 @@ import MenuBar from "../Assets/Icons/MenuBar.svg";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function Header(props) {
-  const [active, setActive] = useState(0);
   const { toggleDarkTheme, darkMode } = useTheme();
-
-  const pinkColor = "rgb(214 107 160)";
 
   let navigationOptions = [
     {
@@ -72,13 +69,9 @@ export default function Header(props) {
           </div>
         ) : (
           <div className="nav-links">
-            {navigationOptions.map((nav) => (
-              <div id="links">
-                <h2
-                  key={nav.id}
-                  style={active == nav.id ? { color: pinkColor } : null}
-                  onClick={() => scrollToRef(nav.id)}
-                >
+            {navigationOptions.map((nav, key) => (
+              <div key={key} id="links">
+                <h2 key={nav.id} onClick={() => scrollToRef(nav.id)}>
                   {nav.name}
                 </h2>
               </div>
@@ -89,10 +82,9 @@ export default function Header(props) {
                 className="dark-mode-image transition"
                 src={darkMode ? Sun : Moon}
                 alt=""
-                srcset=""
               />
             </div>
-            <img className="hamburger-bar" src={MenuBar} />
+            <img alt="hamburger icon" className="hamburger-bar" src={MenuBar} />
           </div>
         )}
       </header>

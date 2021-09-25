@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "../CSS Components/PrimaryContent.css";
 import Home from "./Cards/HomeCard";
 import About from "./About";
