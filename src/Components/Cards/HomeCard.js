@@ -64,10 +64,10 @@ export default function HomeCard(props) {
             }
           >
             <p>
-              I'm a software engineer Lucas ipsum dolor sit amet luke calrissian
-              thrawn k-3po mon leia skywalker biggs yoda leia. Darth binks boba
-              dooku jango lobot solo leia fett. R2-d2{" "}
+              I'm a software engineer and a huge Star Wars fan. Try your best to
+              find all of the Star Wars easter eggs on this site!
             </p>
+            <p className="hidden-text">Use the force, Luke!</p>
           </div>
         </div>
         <div className="main-card-abstract-image">

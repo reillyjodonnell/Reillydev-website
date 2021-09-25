@@ -49,8 +49,8 @@ export default function HomeCard(props) {
                   <span>
                     I love spending time with my family and spending time
                     outdoors. I'd like to think I have a green thumb 🪴 I also
-                    love to go camping, just not during the summer when it's in
-                    the 90's. I'm an avid sci-fi fan! I'm currently reading the
+                    love to go camping, especially in the cool, fall weather.
+                    I'm an avid sci-fi fan! I'm currently wrapping up on the
                     last few books of the Foundation series.
                   </span>
                   <br />
