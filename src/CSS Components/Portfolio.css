@@ -25,7 +25,7 @@
   justify-content: center;
 }
 .project-overview > div {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-image-container {
@@ -47,9 +47,12 @@
   background-color: var(--faded-green);
   position: relative;
 }
+.portfolio-image-filter:hover {
+  cursor: pointer;
+}
 .project-title {
   color: white;
-  padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
 .project-description {
   color: white;
@@ -67,11 +70,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem 1.5rem;
+    margin: 0rem 1.5rem;
     width: auto !important;
   }
   .project {
     flex-direction: column;
+    margin-bottom: 0 !important;
   }
   .project-image {
     width: 100% !important;
@@ -89,7 +93,6 @@
     height: 275px;
   }
   .project-title {
-    margin-top: 1rem;
     margin-bottom: 0 !important;
   }
   .project-technologies {

@@ -312,6 +312,10 @@ section {
     height: 0;
     width: 0;
   }
+  section {
+    padding: 0;
+    margin-bottom: 8rem;
+  }
 
   .main-card-abstract-image {
     display: none;

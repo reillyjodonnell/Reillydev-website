@@ -17,6 +17,7 @@
   border-radius: 15px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .about-card-image {
@@ -103,10 +104,7 @@ h2 {
 
   .about-container-dark,
   .about-container-light {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 1.5rem !important;
+    margin: 0rem 1.5rem !important;
     width: auto !important;
   }
   .about-text {
