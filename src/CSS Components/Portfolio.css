@@ -1,5 +1,4 @@
 #portfolio {
-  background-color: var(--purple);
 }
 .portfolio-container {
   display: flex;
@@ -14,9 +13,7 @@
   color: white;
   justify-content: flex-start;
 }
-.project {
-  display: flex;
-}
+
 .project-overview {
   text-align: right;
   margin-left: auto;

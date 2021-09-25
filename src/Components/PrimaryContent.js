@@ -49,6 +49,7 @@ export default function PrimaryContent() {
       <div className="about-container" ref={portfolioRef}>
         <Portfolio darkMode={darkMode} />
       </div>
+      <div className="stars" />
       <div className="skills-container" ref={blogRef}>
         <Blog darkMode={darkMode} />
       </div>

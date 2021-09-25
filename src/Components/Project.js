@@ -2,10 +2,13 @@ import Github from "../Assets/Icons/Github2.svg";
 import React from "react";
 import ExternalLink from "../Assets/Icons/ExternalLink.svg";
 import "../CSS Components/Project.css";
+import { useTheme } from "../contexts/ThemeContext";
 
 export default function Project(props) {
+  const { darkMode } = useTheme();
+
   return (
-    <div className="project">
+    <div className={darkMode ? "project" : "project-light"}>
       <div className="project-image">
         <div className="project-image-container">
           <div className="portfolio-image-filter">
@@ -40,9 +43,13 @@ export default function Project(props) {
 
         <div className="project-links">
           <a href="https://memesfr.com" rel="noreferrer" target="_blank">
-            <div className="action-icon">
-              <img alt="website redirect" src={ExternalLink} />
-              <span>View Website</span>
+            <div className={darkMode ? "action-icon" : "action-icon-light"}>
+              <img
+                className="action-icon-img"
+                alt="website redirect"
+                src={ExternalLink}
+              />
+              <span className="action-icon-text">View Website</span>
             </div>
           </a>
           <a
@@ -50,9 +57,13 @@ export default function Project(props) {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="action-icon">
-              <img alt="the cat logo of Github" src={Github} />
-              <span>View Code</span>
+            <div className={darkMode ? "action-icon" : "action-icon-light"}>
+              <img
+                className="action-icon-img"
+                alt="the cat logo of Github"
+                src={Github}
+              />
+              <span className="action-icon-text">View Code</span>
             </div>
           </a>
         </div>
