@@ -5,6 +5,7 @@
   align-items: flex-start;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .greeting > div {
   flex: 1;
@@ -23,6 +24,9 @@
   width: 100%;
   cursor: pointer;
   color: transparent;
+  position: absolute;
+  bottom: 0;
+  
 }
 .hidden-text:hover {
   color: white;
@@ -213,7 +217,7 @@
     margin-left: 2rem !important;
   }
   .main-card-body {
-    margin: 2rem;
+    margin: 1rem 2rem;
   }
 
   .greeting-intro-text h2 {
@@ -245,7 +249,7 @@
     height: 100vh;
   }
   .main-card-body {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
   .about-container-dark,
   .about-container {

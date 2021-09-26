@@ -8,13 +8,14 @@ import { useTheme } from "../../contexts/ThemeContext";
 export default function HomeCard(props) {
   const { darkMode } = useTheme();
 
-  const description = [
-    "Sci-fi fan",
-    "Software Engineer",
-    "JavaScript Developer",
-    "Programmer",
-    "React Developer",
-  ];
+  // const description = [
+  //   "Sci-fi fan",
+  //   "Software Engineer",
+  //   "JavaScript Developer",
+  //   "Programmer",
+  //   "React Developer",
+  // ];
+  const description = ["JavaScript Developer"];
 
   return (
     <>
@@ -67,8 +68,8 @@ export default function HomeCard(props) {
               I'm a software engineer and a huge Star Wars fan. Try your best to
               find all of the Star Wars easter eggs on this site!
             </p>
-            <p className="hidden-text">Use the force, Luke!</p>
           </div>
+          <p className="hidden-text">Use the force, Luke!</p>
         </div>
         <div className="main-card-abstract-image">
           {darkMode ? (
