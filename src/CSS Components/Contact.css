@@ -3,13 +3,19 @@
   padding: 0px 0px 50px 0px;
   width: 1000px;
 }
-.fa-lg:hover {
+.fa-lg:hover,
+.fa-2x:hover {
   cursor: pointer;
+  transition: color var(--speed);
   color: var(--green);
 }
 .social-list {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
   color: #fffbfe;
+}
+.social-list a {
+  margin-right: 1rem;
+}
+.fa-lg {
 }

@@ -63,30 +63,34 @@ export default function Header(props) {
         <div className={darkMode ? "logo-dark transition" : "logo transition"}>
           <h2>RO</h2>
         </div>
-        {props.mobile ? (
-          <div className="hamburger-bar">
-            <img src={MenuBar} className="hamburger-icon" alt="" srcset="" />
-          </div>
-        ) : (
-          <div className="nav-links">
-            {navigationOptions.map((nav, key) => (
-              <div key={key} id="links">
-                <h2 key={nav.id} onClick={() => scrollToRef(nav.id)}>
-                  {nav.name}
-                </h2>
-              </div>
-            ))}
-            <div id="links">
-              <img
-                onClick={enableDarkMode}
-                className="dark-mode-image transition"
-                src={darkMode ? Sun : Moon}
-                alt=""
-              />
+        <div className="nav-links">
+          {navigationOptions.map((nav, key) => (
+            <div key={key} id="links">
+              <h2 key={nav.id} onClick={() => scrollToRef(nav.id)}>
+                {nav.name}
+              </h2>
             </div>
+          ))}
+          <div id="links">
+            <img
+              onClick={enableDarkMode}
+              className="dark-mode-image transition"
+              src={darkMode ? Sun : Moon}
+              alt=""
+            />
+          </div>
+
+          <div
+            className={
+              props.openNav === false
+                ? "hamburger-bar"
+                : "hamburger-bar-inactive"
+            }
+            onClick={() => props.toggleMenu()}
+          >
             <img alt="hamburger icon" className="hamburger-bar" src={MenuBar} />
           </div>
-        )}
+        </div>
       </header>
     </div>
   );

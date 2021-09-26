@@ -24,6 +24,8 @@ body {
   --grey: #868686b3;
   --dark-grey: #222222;
   --light-grey: #f6f6f6;
+  --speed: 0.3s;
+  --speed-slow: 0.6s;
 }
 
 /*Dark Mode */

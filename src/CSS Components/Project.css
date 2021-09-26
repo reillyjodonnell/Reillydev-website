@@ -25,7 +25,7 @@
 }
 .project-overview {
   width: 40%;
-  padding-left: 1rem;
+  padding-left: 2rem;
   box-sizing: border-box;
   flex-basis: auto;
   flex: 1 1 auto;
@@ -74,6 +74,7 @@
 }
 .action-icon {
   background-color: var(--dark-grey);
+  border: 3px solid black;
   width: 65px;
   height: 65px;
   border-radius: 15px;
@@ -87,6 +88,8 @@
 }
 .action-icon-light {
   background-color: #191919ad;
+  border: 3px solid black;
+
   width: 65px;
   height: 65px;
   border-radius: 15px;
@@ -107,7 +110,7 @@
 }
 .action-icon:hover,
 .action-icon-light:hover {
-  transition: filter 0.3s;
+  transition: filter var(--speed);
   filter: brightness(200%);
 }
 .action-icon-img svg {
@@ -147,5 +150,18 @@
   .action-icon {
     margin-right: 0;
     margin: 1rem;
+  }
+}
+/*iPhone 5*/
+@media only screen and (max-width: 321px) and (max-height: 570px) {
+  .list-of-technology {
+    grid-template-columns: repeat(3, auto);
+  }
+  .project-light {
+    margin-top: 0;
+  }
+  .action-icon {
+    margin: 0;
+    margin-right: 1rem;
   }
 }

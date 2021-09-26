@@ -10,15 +10,22 @@ export default function Project(props) {
   return (
     <div className={darkMode ? "project" : "project-light"}>
       <div className="project-image">
-        <div className="project-image-container">
-          <div className="portfolio-image-filter">
-            <img
-              className="project-image-fit"
-              alt=""
-              src={props.projectImage}
-            />
+        <a
+          className="project-link-container"
+          href={props.projectLink}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div className="project-image-container">
+            <div className="portfolio-image-filter">
+              <img
+                className="project-image-fit"
+                alt=""
+                src={props.projectImage}
+              />
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div className="project-overview">
         <div className="project-title">

@@ -14,6 +14,8 @@ export default function Card(props, setActiveScreen, mobile) {
         }
       >
         <Header
+          openNav={props.openNav}
+          toggleMenu={props.toggleMenu}
           scrollToAbout={props.scrollToAbout}
           scrollToPortfolio={props.scrollToPortfolio}
           scrollToBlog={props.scrollToBlog}

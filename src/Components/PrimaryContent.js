@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../CSS Components/PrimaryContent.css";
 import Home from "./Cards/HomeCard";
 import About from "./About";
@@ -7,6 +7,7 @@ import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import { useTheme } from "../contexts/ThemeContext";
+import Sidebar from "./Sidebar";
 
 export default function PrimaryContent() {
   const { darkMode } = useTheme();
@@ -14,6 +15,7 @@ export default function PrimaryContent() {
   const portfolioRef = useRef();
   const blogRef = useRef();
   const contactRef = useRef();
+  const [openNav, setOpenNav] = useState(false);
 
   function scrollToAbout() {
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -27,12 +29,19 @@ export default function PrimaryContent() {
   function scrollToContact() {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   }
+  function toggleMenu() {
+    setOpenNav((prevNav) => !prevNav);
+    console.log("Toggling nav");
+  }
 
   return (
     <>
       <div className="stars"> </div>
+      <Sidebar openNav={openNav} toggleMenu={toggleMenu} />
       <div className="container">
         <Card
+          openNav={openNav}
+          toggleMenu={toggleMenu}
           id="home"
           content="home-content"
           scrollToPortfolio={scrollToPortfolio}
@@ -43,6 +52,7 @@ export default function PrimaryContent() {
           <Home />
         </Card>
       </div>
+
       <div className="about-container" ref={aboutRef}>
         <About />
       </div>
@@ -55,6 +65,12 @@ export default function PrimaryContent() {
       </div>
       <div className="skills-container" ref={contactRef}>
         <Contact darkMode={darkMode} />
+      </div>
+      <br />
+      <br />
+      <div className="tagline">
+        <span>Made with ❤️</span>
+        <span style={{ paddingLeft: "10px" }}>by Reilly</span>
       </div>
     </>
   );

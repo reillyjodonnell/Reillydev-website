@@ -22,6 +22,7 @@ export default function Portfolio({ darkMode }) {
           <Project
             projectImage={Memesfr}
             projectTitle="Memesfr"
+            projectLink="https://memesfr.com"
             projectDescription="A full stack social media application that allows users to
                   share memes within the community. Users can post, like, and
                   favorite memes."

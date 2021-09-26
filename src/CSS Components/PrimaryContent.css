@@ -213,7 +213,7 @@ section {
   color: #fffbfe;
 }
 .transition {
-  transition: all 0.6s linear;
+  transition: all var(--speed) linear;
 }
 
 /* Viewing container*/
@@ -288,6 +288,17 @@ section {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     */
+}
+
+.tagline {
+  display: flex;
+  width: auto;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 @keyframes promptDown {

@@ -39,13 +39,17 @@
   width: 100%;
 }
 .portfolio-image-filter {
-  width: 100%;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: auto;
   height: 100%;
   background-color: var(--faded-green);
   position: relative;
 }
 .portfolio-image-filter:hover {
   cursor: pointer;
+  transition: background-color var(--speed);
+  background-color: transparent;
 }
 .project-title {
   color: white;
@@ -76,6 +80,10 @@
   }
   .project-image {
     width: 100% !important;
+  }
+  .project-link-container {
+    display: flex;
+    width: 100%;
   }
   .project-overview {
     margin-left: 0;

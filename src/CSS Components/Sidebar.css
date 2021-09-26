@@ -1,0 +1,72 @@
+.sidebar-container {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    background-color: var(--dark-grey);
+    z-index: 10;
+    animation-duration: var(--speed-slow);
+    animation-name: slidein;
+    animation-fill-mode: forwards; 
+}
+.sidebar-container-inactive {
+    position: absolute;
+    
+    height: 100vh;
+    right: 0;
+    background-color: var(--dark-grey);
+    z-index: 10;
+    animation-duration: var(--speed-slow);
+    animation-name: slideout;
+    animation-fill-mode: forwards; 
+
+}
+.exit-sidebar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+.exit-sidebar-inactive {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    animation-duration: var(--speed-slow);
+    animation-name: dissapear;
+    animation-fill-mode: forwards; 
+}
+.x svg{
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+}
+
+@keyframes slidein {
+    from {
+      width: 10vw;
+    }
+  
+    to {
+      width: 100vw;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      width: 100vw;
+      opacity: 1;
+    }
+  
+    to {
+      width: 0vw;
+    }
+  }
+  @keyframes dissapear {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+  }
+
+ 
+  
