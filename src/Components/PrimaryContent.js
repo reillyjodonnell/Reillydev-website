@@ -31,7 +31,6 @@ export default function PrimaryContent() {
   }
   function toggleMenu() {
     setOpenNav((prevNav) => !prevNav);
-    console.log("Toggling nav");
   }
 
   return (
