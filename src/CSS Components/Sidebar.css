@@ -10,7 +10,7 @@
 }
 .sidebar-container-inactive {
     position: absolute;
-    right: -100%;
+    right: 0;
     height: 100vh;
     background-color: var(--dark-grey);
     z-index: 10;
@@ -31,6 +31,7 @@
     animation-duration: var(--speed-slow);
     animation-name: dissapear;
     animation-fill-mode: forwards; 
+    width: auto;
 }
 .x svg{
     width: 40px;
@@ -49,15 +50,17 @@
   }
 
   @keyframes slideout {
-    from {
+    0%{width: 100vw; opacity: 1; display: block;}
+    100%{width: 0; transform: translate(0,-10px);}
+    /* from {
       width: 100vw;
       opacity: 1;
     }
   
     to {
-      right: -100%;
       width: 0vw;
-    }
+      opacity: 0;
+    } */
   }
   @keyframes dissapear {
       from {

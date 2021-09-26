@@ -13,23 +13,25 @@ export default function Sidebar({ openNav, toggleMenu }) {
       >
         <img alt="x" className="x" src={X} />
       </div>
-      <div className="sidebar-nav">
-        <div className="sidebar-item">
-          <span>1</span>
+      {openNav && (
+        <div className="sidebar-nav">
+          <div className="sidebar-item">
+            <span>1</span>
+          </div>
+          <div className="sidebar-item">
+            <span>1</span>
+          </div>
+          <div className="sidebar-item">
+            <span>1</span>
+          </div>
+          <div className="sidebar-item">
+            <span>1</span>
+          </div>
+          <div className="sidebar-item">
+            <span>1</span>
+          </div>
         </div>
-        <div className="sidebar-item">
-          <span>1</span>
-        </div>
-        <div className="sidebar-item">
-          <span>1</span>
-        </div>
-        <div className="sidebar-item">
-          <span>1</span>
-        </div>
-        <div className="sidebar-item">
-          <span>1</span>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
