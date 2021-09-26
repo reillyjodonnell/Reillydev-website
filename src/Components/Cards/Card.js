@@ -3,7 +3,7 @@ import Header from "../Header";
 import { useTheme } from "../../contexts/ThemeContext";
 import Home from "../Cards/HomeCard";
 
-export default function Card(props, setActiveScreen, mobile) {
+export default function Card(props) {
   const { darkMode } = useTheme();
 
   return (
@@ -14,8 +14,7 @@ export default function Card(props, setActiveScreen, mobile) {
         }
       >
         <Header
-          openNav={props.openNav}
-          toggleMenu={props.toggleMenu}
+          handleSideBar={props.handleSideBar}
           scrollToAbout={props.scrollToAbout}
           scrollToPortfolio={props.scrollToPortfolio}
           scrollToBlog={props.scrollToBlog}

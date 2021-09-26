@@ -34,7 +34,7 @@ export default function HomeCard(props) {
                   }
                 >
                   <div className="navigation-header">
-                    <img alt="sattellite" src={Satellite} />
+                    <img alt="satellite" src={Satellite} />
                     <h1>About Me</h1>
                   </div>
                   <span>

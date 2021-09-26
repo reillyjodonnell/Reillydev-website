@@ -4,20 +4,40 @@
     right: 0;
     background-color: var(--dark-grey);
     z-index: 10;
-    animation-duration: var(--speed-slow);
+    animation-duration: var(--speed);
     animation-name: slidein;
     animation-fill-mode: forwards; 
 }
+
 .sidebar-container-inactive {
     position: absolute;
     right: 0;
     height: 100vh;
     background-color: var(--dark-grey);
     z-index: 10;
-    animation-duration: var(--speed-slow);
+    animation-duration: var(--speed);
     animation-name: slideout;
     animation-fill-mode: forwards; 
-
+}
+.sidebar-container-light {
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  background-color: var(--light-grey);
+  z-index: 10;
+  animation-duration: var(--speed);
+  animation-name: slidein;
+  animation-fill-mode: forwards; 
+}
+.sidebar-container-light-inactive {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  background-color: var(--light-grey);
+  z-index: 10;
+  animation-duration: var(--speed);
+  animation-name: slideout;
+  animation-fill-mode: forwards; 
 }
 .exit-sidebar {
     position: absolute;
@@ -26,17 +46,22 @@
 }
 .exit-sidebar-inactive {
     position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    animation-duration: var(--speed-slow);
+    top: 1.75rem;
+    right: 1.35rem;
+    animation-duration: var(--speed);
     animation-name: dissapear;
     animation-fill-mode: forwards; 
-    width: auto;
 }
 .x svg{
     width: 40px;
     height: 40px;
-    padding: 1rem;
+}
+.x{
+  padding: .25rem;
+}
+.x-inactive{
+  display: none;
+
 }
 
 @keyframes slidein {
@@ -47,6 +72,16 @@
     to {
       width: 100vw;
     }
+  }
+
+  @keyframes slideAway {
+    from {
+      transform: translate(0,0);
+    }
+    to{
+      transform: translate(50px,0);
+    }
+    
   }
 
   @keyframes slideout {
@@ -67,24 +102,54 @@
           opacity: 1;
       }
       to {
-          opacity: 0;
+          display: none;
       }
   }
 
   .sidebar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    padding: 6rem 3rem 3rem 3rem;
   }
   .sidebar-item {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     color: white;
     font-size: 2rem;
     font-weight: 700;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+    border-radius: 15px;
+
+  }
+  .sidebar-item-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+    border-radius: 15px;
+
+  }
+  .sidebar-item-light img {
+    padding-right: 1rem;
+  }
+  .sidebar-item img {
+    padding-right: 1rem;
   }
 
  

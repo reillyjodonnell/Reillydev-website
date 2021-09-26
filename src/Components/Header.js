@@ -86,7 +86,7 @@ export default function Header(props) {
                 ? "hamburger-bar"
                 : "hamburger-bar-inactive"
             }
-            onClick={() => props.toggleMenu()}
+            onClick={props.handleSideBar}
           >
             <img alt="hamburger icon" className="hamburger-bar" src={MenuBar} />
           </div>

@@ -16,6 +16,15 @@ export default function PrimaryContent() {
   const blogRef = useRef();
   const contactRef = useRef();
   const [openNav, setOpenNav] = useState(false);
+  const [hasOpened, setHasOpened] = useState(false);
+
+  function handleSideBar() {
+    console.log("Test");
+    if (hasOpened === false) {
+      setHasOpened(true);
+    }
+    setOpenNav((prevState) => !prevState);
+  }
 
   function scrollToAbout() {
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -29,18 +38,23 @@ export default function PrimaryContent() {
   function scrollToContact() {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   }
-  function toggleMenu() {
-    setOpenNav((prevNav) => !prevNav);
-  }
 
   return (
     <>
       <div className="stars"> </div>
-      <Sidebar openNav={openNav} toggleMenu={toggleMenu} />
+      {hasOpened && (
+        <Sidebar
+          scrollToPortfolio={scrollToPortfolio}
+          scrollToAbout={scrollToAbout}
+          scrollToBlog={scrollToBlog}
+          scrollToContact={scrollToContact}
+          openNav={openNav}
+          handleSideBar={handleSideBar}
+        />
+      )}
       <div className="container">
         <Card
-          openNav={openNav}
-          toggleMenu={toggleMenu}
+          handleSideBar={handleSideBar}
           id="home"
           content="home-content"
           scrollToPortfolio={scrollToPortfolio}
