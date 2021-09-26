@@ -79,6 +79,8 @@ export default function Sidebar({
           ? "sidebar-container"
           : openNav && !darkMode
           ? "sidebar-container-light"
+          : !openNav && !darkMode
+          ? "sidebar-container-light-inactive"
           : "sidebar-container-inactive"
       }
     >
