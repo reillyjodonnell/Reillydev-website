@@ -10,7 +10,7 @@ export default function Skills() {
     <>
       <section id="blog">
         <div className="portfolio-container">
-          <div className="blog-header">
+          <div className={darkMode ? "blog-header" : "blog-header-light"}>
             <img alt="satellite" src={Satellite} />
             <h1>Recent Writings</h1>
           </div>

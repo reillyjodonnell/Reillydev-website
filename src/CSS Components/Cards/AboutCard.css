@@ -6,6 +6,8 @@
 .navigation-header img {
   margin-right: 10px;
 }
+.about-container {
+}
 .about-container-light {
   background-color: var(--blue);
 }

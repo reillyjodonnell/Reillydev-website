@@ -8,8 +8,21 @@
   align-items: center;
   color: white;
   font-size: 1.25rem;
+  background-color: var(--purple);
+}
+.blog-header-light {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  background-color: var(--white);
 }
 .blog-header img {
+  margin-right: 10px;
+}
+.blog-header-light img {
   margin-right: 10px;
 }
 .blog-button {

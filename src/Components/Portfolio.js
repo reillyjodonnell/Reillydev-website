@@ -13,34 +13,36 @@ export default function Portfolio({ darkMode }) {
   return (
     <>
       <section id="portfolio">
-        <div className="portfolio-container">
-          <div className="portfolio-header navigation-header">
-            <img src={Planet} alt="A planet" />
+        <div>
+          <div className="portfolio-container">
+            <div className="portfolio-header navigation-header">
+              <img src={Planet} alt="A planet" />
 
-            <h1>Here's What I've Worked On</h1>
-          </div>
-          <Project
-            projectImage={Memesfr}
-            projectTitle="Memesfr"
-            projectLink="https://memesfr.com"
-            projectDescription="A full stack social media application that allows users to
+              <h1>Here's What I've Worked On</h1>
+            </div>
+            <Project
+              projectImage={Memesfr}
+              projectTitle="Memesfr"
+              projectLink="https://memesfr.com"
+              projectDescription="A full stack social media application that allows users to
                   share memes within the community. Users can post, like, and
                   favorite memes."
-            technologies={[
-              "React",
-              "Firebase",
-              "JavaScript",
-              "Material-UI",
-              "CSS",
-            ]}
-            technologiesIcons={[
-              ReactIcon,
-              Firebase,
-              JavaScript,
-              MaterialUI,
-              CSSIcon,
-            ]}
-          />
+              technologies={[
+                "React",
+                "Firebase",
+                "JavaScript",
+                "Material-UI",
+                "CSS",
+              ]}
+              technologiesIcons={[
+                ReactIcon,
+                Firebase,
+                JavaScript,
+                MaterialUI,
+                CSSIcon,
+              ]}
+            />
+          </div>
         </div>
       </section>
     </>
