@@ -37,6 +37,7 @@
   cursor: pointer;
   color: white;
   font-size: 1.25rem;
+  margin-left: 1.5rem;
 }
 
 .blog-button:hover {
@@ -46,4 +47,113 @@
 .blog-light {
   background-color: #191919ad;
   border: 3px solid black;
+}
+.card-container-background{
+  border: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  /* Blue variable and white gradient
+  background: rgb(238,238,238);
+  background: linear-gradient(315deg, rgba(238,238,238,1) 34%, rgba(97,132,216,1) 100%);
+  */
+
+  /* Green variable and white gradient
+  background: rgb(238,238,238);
+  background: linear-gradient(315deg, rgba(238,238,238,1) 34%, rgba(88,176,156,1) 100%);
+  */
+  /*Dark grey variable with white*/
+  background-color: rgb(238,238,238);
+  background: linear-gradient(144deg, rgba(238,238,238,1) 0%, rgba(34,34,34,1) 100%);
+  border-radius: 15px;
+  height: 225px;
+  width: 150px;
+  position: relative;
+
+}
+.card-container{
+  border: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Blue variable and white gradient
+  background: rgb(238,238,238);
+  background: linear-gradient(315deg, rgba(238,238,238,1) 34%, rgba(97,132,216,1) 100%);
+  */
+
+  /* Green variable and white gradient
+  background: rgb(238,238,238);
+  background: linear-gradient(315deg, rgba(238,238,238,1) 34%, rgba(88,176,156,1) 100%);
+  */
+  /*Dark grey variable with white*/
+  background-color: rgb(238,238,238);
+  background: linear-gradient(144deg, rgba(238,238,238,1) 0%, rgba(34,34,34,1) 100%);
+  border-radius: 15px;
+  height: 225px;
+  width: 150px;
+  transition: transform var(--speed);
+}
+.card-container:hover{
+  transform: scale(1.15);
+  background: rgba(238,238,238,1) !important;
+  background-color: var(--green) !important;
+
+}
+.row-cards{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
+.headline{
+  font-size: .55rem;
+  margin-bottom: 2rem;
+}
+.article-title{
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: auto;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.article-length{
+  font-size: .5rem;
+}
+@media only screen and (max-width: 800px) {
+  .card-container{
+    width: 100px;
+    height: 175px;
+  }
+  .row-cards{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .blog-button{
+    margin-left: 0;
+  }
+  .article-title{
+    font-size: 1.35rem;
+  } 
+  
+}
+@media only screen and (max-width: 380px) and (max-height: 665px) {
+.card-container {
+  width: 27vw ;
+  height: 32vh ;
+}  
+}
+/*iPhone 5/SE */
+@media only screen and (max-width: 350px) and (max-height: 570px) {
+.article-title{
+  font-size: 1.15rem;
+}  
+.card-container{
+  padding: .5rem;
+}
 }

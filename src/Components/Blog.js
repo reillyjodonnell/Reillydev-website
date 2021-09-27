@@ -6,6 +6,19 @@ import Satellite from "../Assets/Icons/Comet.svg";
 
 export default function Skills() {
   const { darkMode } = useTheme();
+
+  const Card = (props) => {
+    return (
+      <a href={props.link} rel="noreferrer" target="_blank">
+        <div className="card-container">
+          <span className="headline">NEW ARTICLE</span>
+          <h2 className="article-title">{props.title}</h2>
+          <span className="article-length">{props.length} MIN</span>
+        </div>
+      </a>
+    );
+  };
+
   return (
     <>
       <section id="blog">
@@ -14,11 +27,30 @@ export default function Skills() {
             <img alt="satellite" src={Satellite} />
             <h1>Recent Writings</h1>
           </div>
-          <div className={darkMode ? "blog-button" : "blog-button blog-light"}>
-            <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">
-              blog.reilly.dev
-            </a>
+          <div className="row-cards">
+            <Card
+              link="https://blog.reilly.dev"
+              title="Plain Boring Title"
+              length="4"
+            />
+            <Card
+              link="https://blog.reilly.dev"
+              title="Rise Of Endor"
+              length="2"
+            />
+            <Card
+              link="https://blog.reilly.dev"
+              title="Awesome React Facts"
+              length="10"
+            />
           </div>
+          <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">
+            <div
+              className={darkMode ? "blog-button" : "blog-button blog-light"}
+            >
+              Visit Blog
+            </div>
+          </a>
         </div>
       </section>
     </>
