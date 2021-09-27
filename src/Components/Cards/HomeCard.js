@@ -5,17 +5,16 @@ import Space from "../../Assets/Space.svg";
 import Space2 from "../../Assets/Rocket.svg";
 import { useTheme } from "../../contexts/ThemeContext";
 
-export default function HomeCard(props) {
+export default function HomeCard() {
   const { darkMode } = useTheme();
 
-  // const description = [
-  //   "Sci-fi fan",
-  //   "Software Engineer",
-  //   "JavaScript Developer",
-  //   "Programmer",
-  //   "React Developer",
-  // ];
-  const description = ["JavaScript Developer"];
+  const description = [
+    "Sci-fi fan",
+    "Software Engineer",
+    "JavaScript Developer",
+    "Programmer",
+    "React Developer",
+  ];
 
   return (
     <>

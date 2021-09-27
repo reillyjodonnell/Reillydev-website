@@ -19,7 +19,6 @@ export default function PrimaryContent() {
   const [hasOpened, setHasOpened] = useState(false);
 
   function handleSideBar() {
-    console.log("Test");
     if (hasOpened === false) {
       setHasOpened(true);
     }
