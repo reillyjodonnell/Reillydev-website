@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../CSS Components/Blog.css";
 import { useTheme } from "../contexts/ThemeContext";
 import Satellite from "../Assets/Icons/Comet.svg";
@@ -29,9 +28,9 @@ export default function Skills() {
           </div>
           <div className="row-cards">
             <Card
-              link="https://blog.reilly.dev"
-              title="Plain Boring Title"
-              length="4"
+              link="https://blog.reilly.dev/react-fundamentals-props"
+              title="React Essentials: Props"
+              length="3"
             />
             <Card
               link="https://blog.reilly.dev"
