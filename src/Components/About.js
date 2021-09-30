@@ -1,5 +1,5 @@
 import React from "react";
-import Reilly from "../Assets/Reilly2.jpg";
+import Reilly from "../Assets/Reilly-black-bg.jpg";
 import "../CSS Components/Home.css";
 import "../CSS Components/Cards/AboutCard.css";
 import { useTheme } from "../contexts/ThemeContext";
