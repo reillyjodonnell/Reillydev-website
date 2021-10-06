@@ -49,7 +49,7 @@ export default function Project(props) {
         </div>
 
         <div className="project-links">
-          <a href="https://memesfr.com" rel="noreferrer" target="_blank">
+          <a href={props.projectLink} rel="noreferrer" target="_blank">
             <div className={darkMode ? "action-icon" : "action-icon-light"}>
               <img
                 className="action-icon-img"
@@ -59,11 +59,7 @@ export default function Project(props) {
               <span className="action-icon-text">View Website</span>
             </div>
           </a>
-          <a
-            href="https://github.com/reillyjodonnell/Memesfr_production"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={props.codeLink} target="_blank" rel="noreferrer">
             <div className={darkMode ? "action-icon" : "action-icon-light"}>
               <img
                 className="action-icon-img"

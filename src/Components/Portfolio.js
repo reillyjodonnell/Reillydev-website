@@ -21,6 +21,7 @@ export default function Portfolio({ darkMode }) {
               <h1>Here's What I've Worked On</h1>
             </div>
             <Project
+              codeLink="https://github.com/reillyjodonnell/memesfr"
               projectImage={Memesfr}
               projectTitle="Memesfr"
               projectLink="https://memesfr.com"
