@@ -1,6 +1,23 @@
 # Reillydev Website
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/reillyjodonnell/Reillydev-website">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-Thanks so much for checking out the site! Feel free to do any PRs.
+  <h3 align="center">Reilly's Portfolio site</h3>
+
+  <p align="center">
+    Modern, unique portfolio site.
+    <br />
+    <a href="https://Reilly.dev">View Live Demo</a>
+    ·
+    <a href="https://github.com/reillyjodonnell/Reillydev-website/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/reillyjodonnell/Reillydev-website/issues">Request Feature</a>
+  </p>
+</div>
 
 ### Built With
 
@@ -19,7 +36,7 @@ Project Link: [https://github.com/reillyjodonnell/Reillydev-website](https://git
 ## Table of Contents
 
 - [Cloning Project](#cloning)
-- [Usage](#usage)
+- [License](#license)
 - [Support](#support)
 - [Contributing](#contributing)
 
