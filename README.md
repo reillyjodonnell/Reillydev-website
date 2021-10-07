@@ -4,12 +4,12 @@ Thanks so much for checking out the site! Feel free to do any PRs.
 
 ## Table of Contents
 
-- [Cloning Project](#cloning project)
+- [Cloning Project](#cloning)
 - [Usage](#usage)
 - [Support](#support)
 - [Contributing](#contributing)
 
-## Cloning Project
+## Cloning
 
 This project uses Yarn - notice the yarn.lock file
 
