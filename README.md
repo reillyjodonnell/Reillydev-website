@@ -4,7 +4,7 @@ Thanks so much for checking out the site! Feel free to do any PRs.
 
 ## Table of Contents
 
-- [Cloning Project](#cloning)
+- [Cloning Project](#cloning project)
 - [Usage](#usage)
 - [Support](#support)
 - [Contributing](#contributing)
