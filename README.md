@@ -1,15 +1,46 @@
 # Reillydev Website
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/reillyjodonnell/Reillydev-website">
+  <h3 align="center">Reilly's Portfolio site</h3>
+    
+  </a>
 
-Thanks so much for checking out the site! Feel free to do any PRs.
+
+  <p align="center">
+    Modern, unique portfolio site.
+    <br />
+    <a href="https://Reilly.dev">View Live Demo</a>
+    ·
+    <a href="https://github.com/reillyjodonnell/Reillydev-website/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/reillyjodonnell/Reillydev-website/issues">Request Feature</a>
+  </p>
+</div>
+
+### Built With
+
+This website utilizes React. I personally suggest using Netlify to host - it's free and easy to use.
+
+* [React.js](https://reactjs.org/)
+* [Netlify](https://www.netlify.com/)
+
+<!-- CONTACT -->
+## Contact
+
+Reach out to me on Twitter - [@reillyjodonnell](https://twitter.com/reillyjodonnell) 
+
+Project Link: [https://github.com/reillyjodonnell/Reillydev-website](https://github.com/reillyjodonnell/Reillydev-website)
 
 ## Table of Contents
 
-- [Cloning Project](#cloning project)
-- [Usage](#usage)
+- [Cloning Project](#cloning)
+- [License](#license)
 - [Support](#support)
 - [Contributing](#contributing)
 
-## Cloning Project
+## Cloning
 
 This project uses Yarn - notice the yarn.lock file
 
@@ -18,24 +49,14 @@ git clone https://github.com/reillyjodonnell/Reillydev-website
 yarn install
 ```
 
-## Usage
+## License
 
-Replace the contents of `README.md` with your project's:
-
-- Name
-- Description
-- Installation instructions
-- Usage instructions
-- Support instructions
-- Contributing instructions
-- Licence
-
-Feel free to remove any sections that aren't applicable to your project.
+MIT license.
 
 ## Support
 
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
+Please [open an issue](https://github.com/reillyjodonnell/Reillydev-website/issues/new) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/reillyjodonnell/Reillydev-website/compare/).
