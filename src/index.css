@@ -9,7 +9,6 @@ body {
 }
 #root {
   width: 100vw;
-  height: 100%;
   /* CSS Smooth Scroll */
   overflow-y: scroll;
   overflow-x: hidden;
