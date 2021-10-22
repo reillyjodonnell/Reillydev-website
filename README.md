@@ -3,10 +3,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/reillyjodonnell/Reillydev-website">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <h3 align="center">Reilly's Portfolio site</h3>
+    
   </a>
 
-  <h3 align="center">Reilly's Portfolio site</h3>
 
   <p align="center">
     Modern, unique portfolio site.
