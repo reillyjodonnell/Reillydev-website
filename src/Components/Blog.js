@@ -1,7 +1,7 @@
-import React from "react";
-import "../CSS Components/Blog.css";
-import { useTheme } from "../contexts/ThemeContext";
-import Satellite from "../Assets/Icons/Comet.svg";
+import React from 'react';
+import '../CSS Components/Blog.css';
+import { useTheme } from '../contexts/ThemeContext';
+import Satellite from '../Assets/Icons/Comet.svg';
 
 export default function Skills() {
   const { darkMode } = useTheme();
@@ -22,30 +22,20 @@ export default function Skills() {
     <>
       <section id="blog">
         <div className="portfolio-container">
-          <div className={darkMode ? "blog-header" : "blog-header-light"}>
+          <div className={darkMode ? 'blog-header' : 'blog-header-light'}>
             <img alt="satellite" src={Satellite} />
             <h1>Recent Writings</h1>
           </div>
           <div className="row-cards">
             <Card
-              link="https://blog.reilly.dev/react-fundamentals-props"
+              link="https://blog.reilly.dev/react-essentials-props"
               title="React Essentials: Props"
               length="3"
-            />
-            <Card
-              link="https://blog.reilly.dev"
-              title="Rise Of Endor"
-              length="2"
-            />
-            <Card
-              link="https://blog.reilly.dev"
-              title="Awesome React Facts"
-              length="10"
             />
           </div>
           <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">
             <div
-              className={darkMode ? "blog-button" : "blog-button blog-light"}
+              className={darkMode ? 'blog-button' : 'blog-button blog-light'}
             >
               Visit Blog
             </div>
