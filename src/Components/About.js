@@ -1,9 +1,9 @@
-import React from "react";
-import Reilly from "../Assets/Reilly-black-bg.jpg";
-import "../CSS Components/Home.css";
-import "../CSS Components/Cards/AboutCard.css";
-import { useTheme } from "../contexts/ThemeContext";
-import Satellite from "../Assets/Icons/Satellite.svg";
+import React from 'react';
+import Reilly from '../Assets/Reilly-black-bg.jpg';
+import '../CSS Components/Home.css';
+import '../CSS Components/Cards/AboutCard.css';
+import { useTheme } from '../contexts/ThemeContext';
+import Satellite from '../Assets/Icons/Satellite.svg';
 
 export default function HomeCard(props) {
   const { darkMode } = useTheme();
@@ -13,7 +13,7 @@ export default function HomeCard(props) {
       <section id="about">
         <div
           className={
-            darkMode ? "about-container-dark" : "about-container-light"
+            darkMode ? 'about-container-dark' : 'about-container-light'
           }
         >
           <div className="about-background">
@@ -22,15 +22,15 @@ export default function HomeCard(props) {
                 <div
                   className={
                     darkMode
-                      ? "greeting-intro-text dark transition"
-                      : "greeting-intro-text transition"
+                      ? 'greeting-intro-text dark transition'
+                      : 'greeting-intro-text transition'
                   }
                 ></div>
                 <div
                   className={
                     darkMode
-                      ? "about-text dark transition"
-                      : "about-text transition"
+                      ? 'about-text dark transition'
+                      : 'about-text transition'
                   }
                 >
                   <div className="navigation-header">
@@ -38,11 +38,11 @@ export default function HomeCard(props) {
                     <h1>About Me</h1>
                   </div>
                   <span>
-                    Hello! My name is Reilly O'Donnell - I absolutely love the
+                    Hey! 😎 My name is Reilly O'Donnell - I absolutely love the
                     process of creating things through code. It involves a
                     combination of some of my favorite things: logic,
-                    creativity, and computers! I genuinely have a passion for
-                    people and always enjoy meeting new people!
+                    creativity, and technology. I really enjoy learning and am
+                    always teaching something new that I picked up.
                   </span>
                   <br />
                   <br />
@@ -61,19 +61,19 @@ export default function HomeCard(props) {
                   <br />
                   <ul className="technology-list light-text">
                     <li>React</li>
-                    <li>JavaScript</li>
-                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Remix</li>
                     <li>SQLite</li>
                     <li>NodeJS</li>
-                    <li>Electron</li>
+                    <li>esbuild</li>
                   </ul>
                 </div>
               </div>
               <div
                 className={
                   darkMode
-                    ? "greeting-profession-text transition dark "
-                    : "greeting-profession-text transition"
+                    ? 'greeting-profession-text transition dark '
+                    : 'greeting-profession-text transition'
                 }
               ></div>
             </div>

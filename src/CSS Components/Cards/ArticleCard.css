@@ -1,0 +1,123 @@
+.ArticleCard-parent-container {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 640px;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all var(--speed);
+}
+
+.ArticleCard-parent-container:hover {
+  transform: scale(1.05);
+  border: 4px solid var(--green);
+  transition: all var(--speed);
+}
+
+.ArticleCard-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ArticleCard-image-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+  width: 100%;
+  background-color: #59b09c;
+}
+.ArticleCard-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ArticleCard-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  background-color: #1f1f2b;
+  border-top: 2px solid white;
+  color: white;
+}
+.ArticleCard-content-parent-container {
+  display: flex;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ArticleCard-content-padding-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.ArticleCard-title {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: auto;
+}
+
+.ArticleCard-date {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.653);
+  font-size: 1.2rem;
+}
+.ArticleCard-read-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  border: 3px solid rgba(53, 52, 52, 0.539);
+  background-color: #59b09c;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.ArticleCard-read-button:hover {
+  border: 3px solid white;
+}
+
+@media only screen and (max-width: 800px) {
+  .ArticleCard-parent-container {
+    width: auto;
+  }
+  .ArticleCard-content-container {
+    /* height: 100%; */
+  }
+  .ArticleCard-title {
+    font-size: 1.6rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+}

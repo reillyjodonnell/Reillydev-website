@@ -1,8 +1,8 @@
-import React from "react";
-import About from "./About";
-import "../CSS Components/Skills.css";
-import { useTheme } from "../contexts/ThemeContext";
-import Satellite from "../Assets/Icons/Comet.svg";
+import React from 'react';
+import About from './About';
+import '../CSS Components/Skills.css';
+import { useTheme } from '../contexts/ThemeContext';
+import Satellite from '../Assets/Icons/Comet.svg';
 
 export default function Skills() {
   const { darkMode } = useTheme();
@@ -11,7 +11,7 @@ export default function Skills() {
       <section id="about">
         <div
           className={
-            darkMode ? "about-container-dark" : "about-container-light"
+            darkMode ? 'about-container-dark' : 'about-container-light'
           }
         >
           <div className="about-background">
@@ -20,15 +20,15 @@ export default function Skills() {
                 <div
                   className={
                     darkMode
-                      ? "greeting-intro-text dark transition"
-                      : "greeting-intro-text transition"
+                      ? 'greeting-intro-text dark transition'
+                      : 'greeting-intro-text transition'
                   }
                 ></div>
                 <div
                   className={
                     darkMode
-                      ? "about-text dark transition"
-                      : "about-text transition"
+                      ? 'about-text dark transition'
+                      : 'about-text transition'
                   }
                 >
                   <div className="navigation-header">
@@ -59,19 +59,19 @@ export default function Skills() {
                   <br />
                   <ul className="technology-list light-text">
                     <li>React</li>
-                    <li>JavaScript</li>
-                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Remix</li>
                     <li>SQLite</li>
                     <li>NodeJS</li>
-                    <li>Electron</li>
+                    <li>esbuild</li>
                   </ul>
                 </div>
               </div>
               <div
                 className={
                   darkMode
-                    ? "greeting-profession-text transition dark "
-                    : "greeting-profession-text transition"
+                    ? 'greeting-profession-text transition dark '
+                    : 'greeting-profession-text transition'
                 }
               ></div>
             </div>
