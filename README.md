@@ -9,7 +9,7 @@
 
 
   <p align="center">
-    Modern, unique portfolio site.
+    Card based portfolio site.
     <br />
     <a href="https://Reilly.dev">View Live Demo</a>
     ·
