@@ -1,22 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../CSS Components/Blog.css';
 import { useTheme } from '../contexts/ThemeContext';
 import Satellite from '../Assets/Icons/Comet.svg';
+import ArticleCard from './Cards/ArticleCard';
 
 export default function Skills() {
   const { darkMode } = useTheme();
 
-  const Card = (props) => {
-    return (
-      <a href={props.link} rel="noreferrer" target="_blank">
-        <div className="card-container">
-          <span className="headline">NEW ARTICLE</span>
-          <h2 className="article-title">{props.title}</h2>
-          <span className="article-length">{props.length} MIN</span>
-        </div>
-      </a>
-    );
-  };
+  const [articleData, setArticleData] = useState([]);
+
+  async function retrieveBlogPosts() {
+    const query = `
+    query GetUserArticles($page: Int!) {
+        user(username: "reilly") {
+            publication {
+                posts(page: $page) {
+                    cuid,
+                    slug,
+                    title,
+                    totalReactions,
+                    replyCount,
+                    responseCount,
+                    dateAdded,
+                    coverImage,
+                    dateUpdated,
+                }
+            }
+        }
+    }
+`;
+
+    const variables = { page: 0 };
+
+    const data = await fetch('https://api.hashnode.com/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query,
+        variables,
+      }),
+    });
+
+    const result = await data.json();
+
+    const articles = result?.data?.user?.publication?.posts ?? [];
+    setArticleData(articles);
+  }
+
+  useEffect(() => {
+    retrieveBlogPosts();
+  }, []);
+
+  useEffect(() => {
+    console.log(articleData);
+  }, [articleData]);
 
   return (
     <>
@@ -27,19 +66,34 @@ export default function Skills() {
             <h1>Recent Writings</h1>
           </div>
           <div className="row-cards">
-            <Card
+            {articleData.map((item, index) => {
+              return (
+                <>
+                  <ArticleCard
+                    key={index}
+                    link="https://blog.reilly.dev/react-essentials-props"
+                    title={item.title}
+                    image={item.coverImage}
+                    date={item.dateUpdated}
+                    length="3"
+                  />
+                </>
+              );
+            })}
+            <ArticleCard
               link="https://blog.reilly.dev/react-essentials-props"
-              title="React Essentials: Props"
+              title="This article is coming soon 👀"
+              image="https://images.pexels.com/photos/12003586/pexels-photo-12003586.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
               length="3"
             />
           </div>
-          <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">
+          {/* <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">
             <div
               className={darkMode ? 'blog-button' : 'blog-button blog-light'}
             >
               Visit Blog
             </div>
-          </a>
+          </a> */}
         </div>
       </section>
     </>

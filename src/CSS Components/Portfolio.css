@@ -74,8 +74,10 @@
     align-items: center;
     margin: 0rem 1.5rem;
     width: auto !important;
+    margin: 0rem 1.5rem;
   }
-  .project, .project-light {
+  .project,
+  .project-light {
     flex-direction: column;
     margin-bottom: 0 !important;
   }

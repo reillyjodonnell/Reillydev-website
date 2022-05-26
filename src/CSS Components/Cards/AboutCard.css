@@ -81,11 +81,12 @@ h2 {
   text-align: center;
   list-style: none;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .technology-list li::before {
-  content: url("../../Assets/Icons/Pacman.svg");
+  content: url('../../Assets/Icons/Pacman.svg');
   padding-right: 10px;
 }
 .technology-list li {
