@@ -1,5 +1,5 @@
 import React from 'react';
-import Reilly from '../Assets/Reilly-black-bg.jpg';
+import Reilly from '../Assets/Reilly-2.png';
 import '../CSS Components/Home.css';
 import '../CSS Components/Cards/AboutCard.css';
 import { useTheme } from '../contexts/ThemeContext';
@@ -37,25 +37,35 @@ export default function HomeCard(props) {
                     <img alt="satellite" src={Satellite} />
                     <h1>About Me</h1>
                   </div>
-                  <span>
-                    Hey! 😎 My name is Reilly O'Donnell - I absolutely love the
-                    process of creating things through code. It involves a
-                    combination of some of my favorite things: logic,
-                    creativity, and technology. I really enjoy learning and am
-                    always teaching something new that I picked up.
+                  <br />
+
+                  <span className="About-main-text">Hey! I'm Reilly 😎</span>
+                  <br />
+                  <br />
+
+                  <span className="About-secondary-text">
+                    I'm a software Engineer with a passion for building quality
+                    software. I'm a husband, dad, and casual{' '}
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.youtube.com/watch?v=xA8-6X8aR3o&t=1s"
+                    >
+                      <span className="About-text-bold">musician. 🎹</span>
+                    </a>
                   </span>
                   <br />
                   <br />
-                  <span>
-                    I love spending time with my family and spending time
-                    outdoors. I'd like to think I have a green thumb 🪴 I also
-                    love to go camping, especially in the cool, fall weather.
-                    I'm an avid sci-fi fan! I'm currently wrapping up on the
-                    last few books of the Foundation series.
+                  <span className="About-secondary-text">
+                    I'm a really big fan of JavaScript and the fantastic
+                    community surrounding it. When I'm not coding I'm either
+                    doing karaoke or playing with my 18 month old. I'm an avid
+                    sci-fi fan! I'm currently wrapping up on the last few books
+                    of the Foundation series.
                   </span>
                   <br />
                   <br />
-                  <span>
+                  <span className="About-secondary-text">
                     Here's some of the technologies I've been working with:
                   </span>
                   <br />

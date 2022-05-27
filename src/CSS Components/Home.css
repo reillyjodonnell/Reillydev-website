@@ -26,7 +26,6 @@
   color: transparent;
   position: absolute;
   bottom: 0;
-  
 }
 .hidden-text:hover {
   color: white;
@@ -122,10 +121,19 @@
 
 .greeting-subtext {
   max-width: 500px;
-  color: #868686b3 !important;
+  font-weight: 700;
+  font-size: 1.4rem;
   line-height: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.greeting-subtext-light {
+  color: #2d2d2dd9;
+}
+
+.greeting-subtext-dark {
+  color: #d5d5d5;
 }
 
 /* Main card image */
@@ -144,8 +152,14 @@
 }
 
 /*Typewriter effect*/
-.professions {
+.professions-dark {
   color: rgb(161 161 161 / 47%) !important;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.professions-light {
+  color: #2d2d2db3;
   font-family: inherit;
   font-weight: 600;
   font-size: 4rem;

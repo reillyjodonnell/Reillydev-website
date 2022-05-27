@@ -13,7 +13,6 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   height: 100px;
-  background-color: var(--light-grey);
   display: flex;
   align-items: center;
   width: 100%;
@@ -26,7 +25,6 @@
   display: flex;
   align-items: center;
   padding-top: 0;
-  background-color: var(--dark-grey);
   color: white;
 }
 .logo {
@@ -69,7 +67,6 @@
   pointer-events: all;
 }
 
-
 /* Mobile Responsiveness */
 
 .hamburger-bar {
@@ -90,9 +87,8 @@
     stroke: #58b09c;
     cursor: pointer;
     animation: var(--speed-slow) appear ease;
-    
   }
-  .hamburger-bar-inactive{
+  .hamburger-bar-inactive {
     display: block !important;
     height: 100%;
     margin-left: auto;
@@ -100,26 +96,25 @@
     margin-right: 3vw;
     height: 4rem;
     stroke: #58b09c;
-      cursor: pointer;
-      animation-duration: var(--speed-slow);
+    cursor: pointer;
+    animation-duration: var(--speed-slow);
     animation-name: dissapear;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
   }
   @keyframes appear {
     from {
-        opacity: 0;
+      opacity: 0;
     }
     to {
-        opacity: 1;
+      opacity: 1;
     }
   }
-    @keyframes dissapear {
-      from {
-          opacity: 1;
-      }
-      to {
-          opacity: 0;
-      }
+  @keyframes dissapear {
+    from {
+      opacity: 1;
     }
-
+    to {
+      opacity: 0;
+    }
+  }
 }

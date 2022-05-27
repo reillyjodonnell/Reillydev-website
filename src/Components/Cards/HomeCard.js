@@ -1,30 +1,31 @@
-import React from "react";
-import "../../CSS Components/Home.css";
-import Typewriter from "typewriter-effect";
-import Space from "../../Assets/Space.svg";
-import Space2 from "../../Assets/Rocket.svg";
-import { useTheme } from "../../contexts/ThemeContext";
+import React from 'react';
+import '../../CSS Components/Home.css';
+import Typewriter from 'typewriter-effect';
+import Space from '../../Assets/Space.svg';
+import Space2 from '../../Assets/Rocket.svg';
+import { useTheme } from '../../contexts/ThemeContext';
 
 export default function HomeCard() {
   const { darkMode } = useTheme();
 
   const description = [
-    "Sci-fi fan",
-    "Software Engineer",
-    "JavaScript Developer",
-    "Programmer",
-    "React Developer",
+    'Sci-fi fan',
+    'Software Engineer',
+    'JavaScript Developer',
+    'Programmer',
+    'React Developer',
   ];
 
   return (
     <>
       <div className="main-card-body">
-        <div className="greeting">
+        <span>I'm Reilly O'Donnell</span>
+        {/* <div className="greeting">
           <div
             className={
               darkMode
-                ? "greeting-intro-text dark transition"
-                : "greeting-intro-text transition"
+                ? 'greeting-intro-text dark transition'
+                : 'greeting-intro-text transition'
             }
           >
             <span className="wave"> 👋🏼 </span>
@@ -33,8 +34,8 @@ export default function HomeCard() {
           <div
             className={
               darkMode
-                ? "greeting-intro-name-text dark transition"
-                : "greeting-intro-name-text transition"
+                ? 'greeting-intro-name-text dark transition'
+                : 'greeting-intro-name-text transition'
             }
           >
             <h2 className="name">Reilly O'Donnell </h2>
@@ -42,8 +43,8 @@ export default function HomeCard() {
           <div
             className={
               darkMode
-                ? "greeting-intro-name-text transition dark "
-                : "greeting-intro-name-text transition"
+                ? 'greeting-intro-name-text transition dark '
+                : 'greeting-intro-name-text transition'
             }
           >
             <Typewriter
@@ -52,16 +53,19 @@ export default function HomeCard() {
                 autoStart: true,
                 loop: true,
                 pauseFor: 2000,
-                wrapperClassName: "typewriter-style professions",
+                wrapperClassName: `typewriter-style ${
+                  darkMode ? 'professions-dark' : 'professions-light'
+                }`,
               }}
             />
           </div>
           <div
-            className={
+            className={`greeting-subtext ${
               darkMode
-                ? "greeting-subtext transition dark "
-                : "greeting-subtext transition"
+                ? 'greeting-subtext-dark transition dark '
+                : 'greeting-subtext-light transition'
             }
+            `}
           >
             <p>
               I'm a software engineer and a huge Star Wars fan. Try your best to
@@ -69,7 +73,7 @@ export default function HomeCard() {
             </p>
           </div>
           <p className="hidden-text">Use the force, Luke!</p>
-        </div>
+        </div> */}
         <div className="main-card-abstract-image">
           {darkMode ? (
             <img

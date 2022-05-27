@@ -69,8 +69,26 @@
 h2 {
   margin: 0;
 }
-.about-text span {
-  font-size: 1.2rem;
+.About-text-bold {
+  padding: 2px 4px;
+  background-color: rgba(255, 255, 255, 0.159);
+
+  transform: scale(2);
+  font-weight: 800;
+  cursor: pointer;
+}
+.About-text-bold:hover {
+  color: var(--green);
+  transition: all var(--speed);
+}
+.About-main-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+.About-secondary-text {
+  font-size: 1.4rem;
+  font-weight: 400;
   color: white;
 }
 .technology-list {

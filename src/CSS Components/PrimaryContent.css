@@ -239,14 +239,17 @@ section {
   display: flex;
 }
 .main-card {
-  background-color: #fffbfe;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 85vh;
   width: 85vw;
   border-radius: 40px;
-  min-height: 70vh;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.main-card-light {
+  border: 6px solid #ffffff2b;
+  background-color: #ffffff1f;
 }
 .main-card,
 .main-card-dark {
@@ -254,13 +257,14 @@ section {
   max-height: 750px;
 }
 .main-card-dark {
-  background-color: #131515;
+  border: 6px solid black;
   display: flex;
   flex-direction: column;
   height: 85vh;
   width: 85vw;
   border-radius: 40px;
   overflow: hidden;
+  background-color: #0000008a;
 }
 
 .main-card-body {
@@ -297,7 +301,7 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
