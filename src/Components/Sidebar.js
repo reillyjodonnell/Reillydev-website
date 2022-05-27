@@ -1,13 +1,13 @@
-import React from "react";
-import X from "../Assets/Icons/X.svg";
-import "../CSS Components/Sidebar.css";
-import Moon from "../Assets/Icons/Moon.svg";
-import Sun from "../Assets/Icons/Sun.svg";
-import { useTheme } from "../contexts/ThemeContext";
-import Satellite from "../Assets/Icons/Satellite.svg";
-import Planet from "../Assets/Icons/Planet.svg";
-import Comet from "../Assets/Icons/Comet.svg";
-import Alien from "../Assets/Icons/Alien.svg";
+import React from 'react';
+import X from '../Assets/Icons/X.svg';
+import '../CSS Components/Sidebar.css';
+import Moon from '../Assets/Icons/Moon.svg';
+import Sun from '../Assets/Icons/Sun.svg';
+import { useTheme } from '../contexts/ThemeContext';
+import Satellite from '../Assets/Icons/Satellite.svg';
+import Planet from '../Assets/Icons/Planet.svg';
+import Comet from '../Assets/Icons/Comet.svg';
+import Alien from '../Assets/Icons/Alien.svg';
 
 export default function Sidebar({
   openNav,
@@ -26,28 +26,28 @@ export default function Sidebar({
   let navigationOptions = [
     {
       id: 1,
-      name: "about",
+      name: 'about',
       image: Satellite,
-      alt: "satellite",
+      alt: 'satellite',
     },
     {
       id: 2,
-      name: "portfolio",
+      name: 'portfolio',
       image: Planet,
-      alt: "planet",
+      alt: 'planet',
     },
     {
       id: 3,
-      name: "writings",
+      name: 'writings',
       image: Comet,
-      alt: "comet",
+      alt: 'comet',
     },
 
     {
       id: 4,
-      name: "contact",
+      name: 'contact',
       image: Alien,
-      alt: "alien",
+      alt: 'alien',
     },
   ];
 
@@ -76,19 +76,19 @@ export default function Sidebar({
     <div
       className={
         openNav && darkMode
-          ? "sidebar-container"
+          ? 'sidebar-container'
           : openNav && !darkMode
-          ? "sidebar-container-light"
+          ? 'sidebar-container-light'
           : !openNav && !darkMode
-          ? "sidebar-container-light-inactive"
-          : "sidebar-container-inactive"
+          ? 'sidebar-container-light-inactive'
+          : 'sidebar-container-inactive'
       }
     >
       <div
-        className={openNav ? "exit-sidebar" : "exit-sidebar-inactive"}
+        className={openNav ? 'exit-sidebar' : 'exit-sidebar-inactive'}
         onClick={handleSideBar}
       >
-        <img alt="x" className={openNav ? "x" : "x-inactive"} src={X} />
+        <img alt="x" className={openNav ? 'x' : 'x-inactive'} src={X} />
       </div>
       {openNav && (
         <div className="sidebar-nav">
@@ -96,7 +96,9 @@ export default function Sidebar({
             <div
               key={key}
               onClick={() => scrollToRef(nav.id)}
-              className={darkMode ? "sidebar-item" : "sidebar-item-light"}
+              className={`sidebar-item ${
+                darkMode ? 'sidebar-item-dark' : 'sidebar-item-light'
+              }`}
             >
               <img alt={nav.alt} src={nav.image} />
               <span key={nav.id}>{nav.name}</span>
@@ -105,7 +107,9 @@ export default function Sidebar({
 
           <div
             onClick={enableDarkMode}
-            className={darkMode ? "sidebar-item" : "sidebar-item-light"}
+            className={`sidebar-item ${
+              darkMode ? 'sidebar-item-dark' : 'sidebar-item-light'
+            }`}
           >
             <img
               className="dark-mode-image transition"

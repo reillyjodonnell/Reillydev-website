@@ -1,14 +1,14 @@
-import Github from "../Assets/Icons/Github2.svg";
-import React from "react";
-import ExternalLink from "../Assets/Icons/ExternalLink.svg";
-import "../CSS Components/Project.css";
-import { useTheme } from "../contexts/ThemeContext";
+import Github from '../Assets/Icons/Github2.svg';
+import React from 'react';
+import ExternalLink from '../Assets/Icons/ExternalLink.svg';
+import '../CSS Components/Project.css';
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function Project(props) {
   const { darkMode } = useTheme();
 
   return (
-    <div className={darkMode ? "project" : "project-light"}>
+    <div className={darkMode ? 'project' : 'project-light'}>
       <div className="project-image">
         <a
           className="project-link-container"
@@ -28,8 +28,8 @@ export default function Project(props) {
         </a>
       </div>
       <div className="project-overview">
-        <div className="project-title">
-          <h2>{props.projectTitle}</h2>
+        <div className="project-title-container">
+          <h2 className="project-title">{props.projectTitle}</h2>
         </div>
         <div className="project-description">
           <span>{props.projectDescription}</span>
@@ -49,8 +49,13 @@ export default function Project(props) {
         </div>
 
         <div className="project-links">
-          <a href={props.projectLink} rel="noreferrer" target="_blank">
-            <div className={darkMode ? "action-icon" : "action-icon-light"}>
+          <a
+            className="action-link"
+            href={props.projectLink}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className={darkMode ? 'action-icon' : 'action-icon-light'}>
               <img
                 className="action-icon-img"
                 alt="website redirect"
@@ -59,8 +64,13 @@ export default function Project(props) {
               <span className="action-icon-text">View Website</span>
             </div>
           </a>
-          <a href={props.codeLink} target="_blank" rel="noreferrer">
-            <div className={darkMode ? "action-icon" : "action-icon-light"}>
+          <a
+            className="action-link"
+            href={props.codeLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className={darkMode ? 'action-icon' : 'action-icon-light'}>
               <img
                 className="action-icon-img"
                 alt="the cat logo of Github"

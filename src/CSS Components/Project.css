@@ -72,6 +72,12 @@
   justify-content: flex-start;
   align-items: center;
 }
+.action-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
 .action-icon {
   background-color: var(--dark-grey);
   border: 3px solid black;
@@ -83,7 +89,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3rem;
   color: white;
 }
 .action-icon-light {
@@ -98,7 +103,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3rem;
   color: white;
 }
 
@@ -111,7 +115,9 @@
 .action-icon:hover,
 .action-icon-light:hover {
   transition: filter var(--speed);
-  filter: brightness(200%);
+  filter: brightness(120%);
+  cursor: pointer;
+  border: 3px solid var(--green);
 }
 .action-icon-img svg {
   width: 34px;

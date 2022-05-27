@@ -1,13 +1,13 @@
-import React from "react";
-import Planet from "../Assets/Icons/Planet.svg";
-import Memesfr from "../Assets/Screenshots/Desktop.png";
-import "../CSS Components/Portfolio.css";
-import { ReactComponent as ReactIcon } from "../Assets/Icons/React.svg";
-import { ReactComponent as JavaScript } from "../Assets/Icons/JavaScript.svg";
-import { ReactComponent as MaterialUI } from "../Assets/Icons/MaterialUI.svg";
-import { ReactComponent as Firebase } from "../Assets/Icons/Firebase.svg";
-import { ReactComponent as CSSIcon } from "../Assets/Icons/CSS.svg";
-import Project from "./Project";
+import React from 'react';
+import Planet from '../Assets/Icons/Planet.svg';
+import Memesfr from '../Assets/Screenshots/Desktop.png';
+import '../CSS Components/Portfolio.css';
+import { ReactComponent as ReactIcon } from '../Assets/Icons/React.svg';
+import { ReactComponent as JavaScript } from '../Assets/Icons/JavaScript.svg';
+import { ReactComponent as MaterialUI } from '../Assets/Icons/MaterialUI.svg';
+import { ReactComponent as Firebase } from '../Assets/Icons/Firebase.svg';
+import { ReactComponent as CSSIcon } from '../Assets/Icons/CSS.svg';
+import Project from './Project';
 
 export default function Portfolio({ darkMode }) {
   return (
@@ -21,19 +21,19 @@ export default function Portfolio({ darkMode }) {
               <h1>Here's What I've Worked On</h1>
             </div>
             <Project
-              codeLink="https://github.com/reillyjodonnell/memesfr"
+              codeLink="https://github.com/reillyjodonnell/memesfr-beta"
               projectImage={Memesfr}
               projectTitle="Memesfr"
-              projectLink="https://memesfr.com"
+              projectLink="https://beta.memesfr.com"
               projectDescription="A full stack social media application that allows users to
                   share memes within the community. Users can post, like, and
                   favorite memes."
               technologies={[
-                "React",
-                "Firebase",
-                "JavaScript",
-                "Material-UI",
-                "CSS",
+                'React',
+                'Firebase',
+                'JavaScript',
+                'Material-UI',
+                'CSS',
               ]}
               technologiesIcons={[
                 ReactIcon,

@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../Header";
-import { useTheme } from "../../contexts/ThemeContext";
-import Home from "../Cards/HomeCard";
+import React from 'react';
+import Header from '../Header';
+import { useTheme } from '../../contexts/ThemeContext';
+import Home from '../Cards/HomeCard';
 
 export default function Card(props) {
   const { darkMode } = useTheme();
@@ -10,7 +10,9 @@ export default function Card(props) {
     <section id={props.id} className={props.content}>
       <div
         className={
-          darkMode ? "main-card-dark transition" : "main-card transition"
+          darkMode
+            ? 'main-card main-card-dark transition'
+            : 'main-card main-card-light transition'
         }
       >
         <Header
@@ -19,7 +21,7 @@ export default function Card(props) {
           scrollToPortfolio={props.scrollToPortfolio}
           scrollToBlog={props.scrollToBlog}
           scrollToContact={props.scrollToContact}
-          style={{ position: "sticky" }}
+          style={{ position: 'sticky' }}
           mobile={props.mobile}
         />
         <Home />

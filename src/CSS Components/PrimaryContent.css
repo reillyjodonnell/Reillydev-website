@@ -228,7 +228,8 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 2rem;
 }
 .main-content {
   display: flex;
@@ -239,42 +240,49 @@ section {
   display: flex;
 }
 .main-card {
-  background-color: #fffbfe;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  height: 85vh;
-  width: 85vw;
-  border-radius: 40px;
-  min-height: 70vh;
-}
-.main-card,
-.main-card-dark {
-  max-width: 1200px;
-  max-height: 750px;
-}
-.main-card-dark {
-  background-color: #131515;
   display: flex;
   flex-direction: column;
   height: 85vh;
   width: 85vw;
   border-radius: 40px;
   overflow: hidden;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  padding: 2rem;
+}
+.main-card-light {
+  border: 6px solid #ffffff2b;
+  background-color: #ffffff1a;
+}
+
+.main-card-dark {
+  border: 6px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 85vw;
+  border-radius: 40px;
+  overflow: hidden;
+  background-color: #0000008a;
 }
 
 .main-card-body {
   position: relative;
-  justify-content: space-between;
-  margin: 4rem 6rem;
+  justify-content: space-around;
   height: 100%;
   flex: 1 1 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 1000px;
-
   overflow: hidden;
+}
+.main-card-greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 100%; */
+  height: 100%;
+  position: relative;
 }
 
 .chevron-down img {
@@ -297,8 +305,13 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
+}
+.main-card,
+.main-card-dark {
+  max-width: 1200px;
+  max-height: 750px;
 }
 
 @keyframes promptDown {
@@ -372,5 +385,19 @@ section {
   .main-card-dark,
   .main-card {
     overflow: hidden;
+  }
+}
+
+/*Desktops*/
+@media only screen and (min-width: 1900px) and (min-height: 800px) {
+  section {
+    max-width: 1500px;
+  }
+  .main-card,
+  .main-card-dark {
+    max-width: 1500px;
+  }
+  .greeting {
+    margin-left: 0;
   }
 }
