@@ -1,20 +1,11 @@
 import React from 'react';
 import '../../CSS Components/Home.css';
-import Typewriter from 'typewriter-effect';
 import Space from '../../Assets/Space.svg';
 import Space2 from '../../Assets/Rocket.svg';
 import { useTheme } from '../../contexts/ThemeContext';
 
 export default function HomeCard() {
   const { darkMode } = useTheme();
-
-  const description = [
-    'Sci-fi fan',
-    'Software Engineer',
-    'JavaScript Developer',
-    'Programmer',
-    'React Developer',
-  ];
 
   return (
     <>

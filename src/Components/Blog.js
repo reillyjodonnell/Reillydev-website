@@ -85,6 +85,7 @@ export default function Skills() {
               title="This article is coming soon 👀"
               image="https://images.pexels.com/photos/12003586/pexels-photo-12003586.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
               length="3"
+              imageAlt="Green petals of a plant with their white flowers blossomed."
             />
           </div>
           {/* <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">

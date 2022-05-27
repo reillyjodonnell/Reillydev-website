@@ -6,6 +6,7 @@ export default function ArticleCard({
   date = new Date(),
   image,
   link,
+  imageAlt = 'no image alt supplied',
 }) {
   const options = {
     year: 'numeric',
@@ -23,7 +24,7 @@ export default function ArticleCard({
         target="_blank"
       >
         <div className="ArticleCard-image-container">
-          <img className="ArticleCard-image" src={image} />
+          <img className="ArticleCard-image" alt={imageAlt} src={image} />
         </div>
         <div className="ArticleCard-content-container">
           <div className="ArticleCard-content-parent-container">
