@@ -154,4 +154,14 @@
     width: auto;
     /* padding: 1rem 3rem;*/
   }
+  .SocialMediaIcon-button {
+    margin-right: 3px;
+  }
+  .Contact-social-container {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  #contact {
+    background-color: rgba(0, 0, 0, 0.295);
+  }
 }
