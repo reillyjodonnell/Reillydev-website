@@ -1,9 +1,9 @@
-import React from "react";
-import "../CSS Components/Header.css";
-import Moon from "../Assets/Icons/Moon.svg";
-import Sun from "../Assets/Icons/Sun.svg";
-import MenuBar from "../Assets/Icons/MenuBar.svg";
-import { useTheme } from "../contexts/ThemeContext";
+import React from 'react';
+import '../CSS Components/Header.css';
+import Moon from '../Assets/Icons/Moon.svg';
+import Sun from '../Assets/Icons/Sun.svg';
+import MenuBar from '../Assets/Icons/MenuBar.svg';
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function Header(props) {
   const { toggleDarkTheme, darkMode } = useTheme();
@@ -11,20 +11,20 @@ export default function Header(props) {
   let navigationOptions = [
     {
       id: 1,
-      name: "about",
+      name: 'about',
     },
     {
       id: 2,
-      name: "portfolio",
+      name: 'portfolio',
     },
     {
       id: 3,
-      name: "writings",
+      name: 'writings',
     },
 
     {
       id: 4,
-      name: "contact",
+      name: 'contact',
     },
   ];
 
@@ -57,10 +57,8 @@ export default function Header(props) {
 
   return (
     <div className="header-wrapper">
-      <header
-        className={darkMode ? "header-dark transition" : "header transition"}
-      >
-        <div className={darkMode ? "logo-dark transition" : "logo transition"}>
+      <header className="header">
+        <div className={darkMode ? 'logo-dark transition' : 'logo transition'}>
           <h2>RO</h2>
         </div>
         <div className="nav-links">
@@ -83,8 +81,8 @@ export default function Header(props) {
           <div
             className={
               props.openNav === false
-                ? "hamburger-bar"
-                : "hamburger-bar-inactive"
+                ? 'hamburger-bar'
+                : 'hamburger-bar-inactive'
             }
             onClick={props.handleSideBar}
           >

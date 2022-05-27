@@ -1,23 +1,23 @@
 .sidebar-container {
-    position: absolute;
-    height: 100vh;
-    right: 0;
-    background-color: var(--dark-grey);
-    z-index: 10;
-    animation-duration: var(--speed);
-    animation-name: slidein;
-    animation-fill-mode: forwards; 
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  background-color: var(--dark-grey);
+  z-index: 10;
+  animation-duration: var(--speed);
+  animation-name: slidein;
+  animation-fill-mode: forwards;
 }
 
 .sidebar-container-inactive {
-    position: absolute;
-    right: 0;
-    height: 100vh;
-    background-color: var(--dark-grey);
-    z-index: 10;
-    animation-duration: var(--speed);
-    animation-name: slideout;
-    animation-fill-mode: forwards; 
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  background-color: var(--dark-grey);
+  z-index: 10;
+  animation-duration: var(--speed);
+  animation-name: slideout;
+  animation-fill-mode: forwards;
 }
 .sidebar-container-light {
   position: absolute;
@@ -25,14 +25,11 @@
   width: 100vw;
   overflow: hidden;
   right: 0;
-  background-color: var(--light-grey);
+  background-color: var(--blue);
   z-index: 10;
   animation-duration: var(--speed);
   animation-name: slidein;
   animation-fill-mode: forwards;
-
-
-
 }
 .sidebar-container-light-inactive {
   position: absolute;
@@ -42,57 +39,62 @@
   z-index: 10;
   animation-duration: var(--speed);
   animation-name: slideout;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 .exit-sidebar {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 }
 .exit-sidebar-inactive {
-    position: absolute;
-    top: 1.75rem;
-    right: 1.35rem;
-    animation-duration: var(--speed);
-    animation-name: dissapear;
-    animation-fill-mode: forwards; 
+  position: absolute;
+  top: 1.75rem;
+  right: 1.35rem;
+  animation-duration: var(--speed);
+  animation-name: dissapear;
+  animation-fill-mode: forwards;
 }
-.x svg{
-    width: 40px;
-    height: 40px;
+.x svg {
+  width: 40px;
+  height: 40px;
 }
-.x{
-  padding: .25rem;
+.x {
+  padding: 0.25rem;
 }
-.x-inactive{
+.x-inactive {
   display: none;
-
 }
 
 @keyframes slidein {
-    from {
-      width: 10vw;
-    }
-  
-    to {
-      width: 100vw;
-    }
+  from {
+    width: 10vw;
   }
 
-  @keyframes slideAway {
-    from {
-      transform: translate(0,0);
-    }
-    to{
-      transform: translate(50px,0);
-    }
-    
+  to {
+    width: 100vw;
   }
+}
 
-  @keyframes slideout {
-    0%{width: 100vw; opacity: 1; display: block;}
-    100%{width: 0; transform: translate(0,-10px);}
-    /* from {
+@keyframes slideAway {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, 0);
+  }
+}
+
+@keyframes slideout {
+  0% {
+    width: 100vw;
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    width: 0;
+    transform: translate(0, -10px);
+  }
+  /* from {
       width: 100vw;
       opacity: 1;
     }
@@ -101,67 +103,54 @@
       width: 0vw;
       opacity: 0;
     } */
-  }
-  @keyframes dissapear {
-      from {
-          opacity: 1;
-      }
-      to {
-          display: none;
-      }
-  }
-
-  .sidebar-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    padding: 6rem 3rem;
-  }
-  .sidebar-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-    border: 2px solid black;
-    width: 100%;
-    height: 100%;
-    margin: .5rem;
-    border-radius: 15px;
-
-  }
-  .sidebar-item-light {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: black;
-    font-size: 2rem;
-    font-weight: 700;
-    border: 2px solid black;
-    width: 100%;
-    height: 100%;
-    margin: .5rem;
-    border-radius: 15px;
-
-  }
-  .sidebar-item-light img {
-    padding-right: 1rem;
-  }
-  .sidebar-item img {
-    padding-right: 1rem;
-  }
-  /*iPhone 5 issues*/
-@media only screen and (max-width:380px) and (max-height: 650px) {
-  .sidebar-item, .sidebar-item-light {
-    padding: .25rem;
-  }
-  
 }
- 
-  
+@keyframes dissapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    display: none;
+  }
+}
+
+.sidebar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 6rem 3rem;
+}
+.sidebar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  margin: 0.5rem;
+  border-radius: 15px;
+  color: white;
+}
+.sidebar-item-light {
+  border: 5px solid white;
+}
+.sidebar-item-dark {
+  border: 5px solid black;
+}
+.sidebar-item-light img {
+  padding-right: 1rem;
+}
+.sidebar-item img {
+  padding-right: 1rem;
+}
+/*iPhone 5 issues*/
+@media only screen and (max-width: 380px) and (max-height: 650px) {
+  .sidebar-item,
+  .sidebar-item-light {
+    padding: 0.25rem;
+  }
+}
