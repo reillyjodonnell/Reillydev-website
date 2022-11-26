@@ -59,7 +59,12 @@
   height: 40px;
 }
 .x {
+  cursor: pointer;
   padding: 0.25rem;
+}
+.x:hover {
+  transition: all var(--speed);
+  filter: brightness(1.2);
 }
 .x-inactive {
   display: none;
@@ -134,13 +139,15 @@
   margin: 0.5rem;
   border-radius: 15px;
   color: white;
+  cursor: pointer;
+  border: 4px solid rgba(255, 255, 255, 0.34);
 }
-.sidebar-item-light {
-  border: 5px solid white;
+.sidebar-item:hover {
+  transition: all var(--speed);
+  border-color: white;
+  filter: brightness(1.2);
 }
-.sidebar-item-dark {
-  border: 5px solid black;
-}
+
 .sidebar-item-light img {
   padding-right: 1rem;
 }

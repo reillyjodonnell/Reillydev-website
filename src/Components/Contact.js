@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Alien from '../Assets/Icons/Alien.svg';
 import { useTheme } from '../contexts/ThemeContext';
 
-export default function Skills() {
+export default function Contact() {
   const { darkMode } = useTheme();
 
   const SocialMediaIcon = ({ link, icon }) => {
@@ -39,7 +39,7 @@ export default function Skills() {
               </span>
 
               <div className="Contact-form-input-container">
-                <label for="name" className="Contact-form-label">
+                <label htmlFor="name" className="Contact-form-label">
                   Your name
                 </label>
                 <input
@@ -50,7 +50,7 @@ export default function Skills() {
                 />
               </div>
               <div className="Contact-form-input-container">
-                <label for="email" className="Contact-form-label">
+                <label htmlFor="email" className="Contact-form-label">
                   Your email:
                 </label>
                 <input

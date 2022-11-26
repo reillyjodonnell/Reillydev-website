@@ -4,6 +4,11 @@ import { useTheme } from '../contexts/ThemeContext';
 import Satellite from '../Assets/Icons/Comet.svg';
 import ArticleCard from './Cards/ArticleCard';
 
+function lengthOfArticle(numberOfWords) {
+  const averageWordsPerMinute = 1000;
+  return Math.round(numberOfWords / averageWordsPerMinute);
+}
+
 export default function Skills() {
   const { darkMode } = useTheme();
 
@@ -24,6 +29,7 @@ export default function Skills() {
                     dateAdded,
                     coverImage,
                     dateUpdated,
+                    contentMarkdown,
                 }
             }
         }
@@ -53,10 +59,6 @@ export default function Skills() {
     retrieveBlogPosts();
   }, []);
 
-  useEffect(() => {
-    console.log(articleData);
-  }, [articleData]);
-
   return (
     <>
       <section id="blog">
@@ -66,35 +68,24 @@ export default function Skills() {
             <h1>Recent Writings</h1>
           </div>
           <div className="row-cards">
-            {articleData.map((item, index) => {
+            {articleData.map((item) => {
+              const date = item?.dateUpdated ?? item.dateAdded;
+              const uniqueKey = `${item?.slug}-${item.dateAdded}`;
+              const link = `https://blog.reilly.dev/${item?.slug}`;
+              const content = item?.contentMarkdown;
+              const length = lengthOfArticle(content?.length ?? 0);
               return (
-                <>
-                  <ArticleCard
-                    key={index}
-                    link="https://blog.reilly.dev/react-essentials-props"
-                    title={item.title}
-                    image={item.coverImage}
-                    date={item.dateUpdated}
-                    length="3"
-                  />
-                </>
+                <ArticleCard
+                  key={item?.cuid ?? uniqueKey}
+                  link={link}
+                  title={item.title}
+                  image={item.coverImage}
+                  date={date}
+                  length={length}
+                />
               );
             })}
-            <ArticleCard
-              link="https://blog.reilly.dev/react-essentials-props"
-              title="This article is coming soon 👀"
-              image="https://images.pexels.com/photos/12003586/pexels-photo-12003586.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-              length="3"
-              imageAlt="Green petals of a plant with their white flowers blossomed."
-            />
           </div>
-          {/* <a target="_blank" rel="noreferrer" href="https://blog.reilly.dev">
-            <div
-              className={darkMode ? 'blog-button' : 'blog-button blog-light'}
-            >
-              Visit Blog
-            </div>
-          </a> */}
         </div>
       </section>
     </>

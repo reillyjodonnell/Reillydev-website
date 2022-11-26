@@ -34,6 +34,7 @@ export default function ArticleCard({
               {date && (
                 <span className="ArticleCard-date">{formattedDate}</span>
               )}
+              <span className="ArticleCard-date">{length} min read</span>
 
               <button className="ArticleCard-read-button">Read</button>
             </div>

@@ -114,6 +114,14 @@ h2 {
   align-items: center;
   margin-right: auto;
 }
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .about-background {
+    margin: 0 4.25rem;
+  }
+  .portfolio-container {
+    margin: 0 4.25rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .about-background {
     display: flex;

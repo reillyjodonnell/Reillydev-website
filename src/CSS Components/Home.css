@@ -160,9 +160,9 @@
 }
 
 .Homecard-blog-button:hover {
+  transition: all var(--speed);
   border: 3px solid white;
   filter: brightness(1.1);
-  transform: scale(1.05);
 }
 /* Main card image */
 .main-card-abstract-image {

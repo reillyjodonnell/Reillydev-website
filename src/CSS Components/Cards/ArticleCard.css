@@ -1,7 +1,7 @@
 .ArticleCard-parent-container {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  max-width: 370px;
   height: 640px;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,7 @@
 .ArticleCard-content-padding-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
   text-align: center;
@@ -70,19 +70,17 @@
 .ArticleCard-title {
   display: flex;
   text-align: center;
-  font-size: 2rem;
-  margin-top: auto;
+  font-size: 1.75rem;
+  padding: 0 20px;
 }
 
 .ArticleCard-date {
-  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.653);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .ArticleCard-read-button {
   display: flex;
@@ -90,7 +88,6 @@
   align-items: center;
   border-radius: 20px;
   padding: 1rem 3rem;
-  margin-bottom: 1rem;
   text-decoration: none;
   border: 3px solid rgba(53, 52, 52, 0.539);
   background-color: #59b09c;
@@ -119,5 +116,14 @@
   .ArticleCard-title {
     font-size: 1.6rem;
     padding: 1rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .ArticleCard-parent-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 540px;
   }
 }
