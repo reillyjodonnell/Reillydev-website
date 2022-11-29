@@ -24,8 +24,8 @@ export default function Portfolio({ darkMode }) {
               codeLink="https://github.com/reillyjodonnell/memesfr-beta"
               projectImage={Memesfr}
               projectTitle="Memesfr"
-              projectLink="https://beta.memesfr.com"
-              projectDescription="A full stack social media application that allows users to
+              projectLink="https://memesfr.com"
+              projectDescription="A serverless, full-stack social media application that allows users to
                   share memes within the community. Users can post, like, and
                   favorite memes."
               technologies={[
